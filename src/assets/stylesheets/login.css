@@ -1,0 +1,111 @@
+/* .img-login{
+    width: 100%;
+    height: 1000px;
+    background: url('../img/img-3.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.text-login{
+    color: #ffffff;
+    font-family: 'Libre Caslon Text';
+    font-size: 26px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.form-login{
+    filter:drop-shadow(10px 10px 100px  black);
+} */
+
+/* After  */
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-between;
+  
+  }
+  
+  .display-center{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-form{
+    width: 500px;
+    height: 550px;
+    border-radius: 45px;
+    background-color: #24262bb9;
+    font-family: 'Dosis', sans-serif;
+    color: aliceblue;
+    filter:drop-shadow(10px 10px 100px  black);
+  
+  }
+  
+  .title-form{
+    margin: 30px 10px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+  }
+  
+  .terms{
+    text-align: center;
+    color: #4FA3A5;
+  }
+  .terms a{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .input-50{
+    width: 46.7%;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  .input-100{
+    width: 88%;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  .form-chiche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .center{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .btn-Submit{
+    width: 260px;
+    height: 50px;
+    background-color: aliceblue;
+    color: #4FA3A5;
+    transition: all .7s;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-Submit:hover{
+    transition: all .7s;
+    background-color: #4FA3A5;
+    color: aliceblue;
+  }
