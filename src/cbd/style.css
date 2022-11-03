@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
     font-family: sans-serif;
     color: #5F4A33;
+    user-select: none;
 }
 
 header {
@@ -94,6 +96,24 @@ header ul.links .buttons a.btn:active {
     color: #F3F0EC;
     background-color: #352F29;
     transition: all 350ms ease-in;
+}
+
+header ul.more-links {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+header ul.more-links li {
+    font-weight: 500;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+header ul.more-links img {
+    display: inline-block;
+    margin: 0 16px 0 0;
 }
 
 .rotate {
