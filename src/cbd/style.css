@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 86px;
+    background-color: #F3F0EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img.logo {
+    width: 35%;
+    margin: 0 20%;
+}
+
+header a.btn-modo-oscuro,
+header a.btn-nav {
+    display: block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+}
+
+
+header a.btn-modo-oscuro {
+    background: url('images/modo-oscuro.png')transparent no-repeat;
+    transition: all 300ms ease-out;
+}
+
+header a.btn-modo-oscuro:hover,
+header a.btn-modo-oscuro:focus,
+header a.btn-modo-oscuro:active {
+    background: url('images/modo-oscuro-hover.png')transparent no-repeat;
+    transition: all 350ms ease-in;
+}
+
+header a.btn-nav {
+    background: url('images/nav.png')transparent no-repeat center;
+    transition: all 300ms ease-out;
+}
+
+header a.btn-nav:hover,
+header a.btn-nav:focus,
+header a.btn-nav:active {
+    background: url('images/nav-hover.png')transparent no-repeat center;
+    transition: all 350ms ease-in;
+}
+
+main.home {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.order {
+    width: 100%;
+    height: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F0EC;
+}
+
+section.order .content {
+    width: 85%;
+    height: 265px;
+    background-color: #FFFFFF;
+}
+
+section.order .content h1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    color: #5F4A33;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+section.order .content p {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6%;
+    color: #5F4A33;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+section.order .content a.btn {
+    display: block;
+    width: 35%;
+    padding: 3% 0;
+    margin: 0 auto;
+    margin-top: 7.5%;
+    color: #5F4A33;
+    background-color: #F3F0EC;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+}
+
+section.order .content a.btn:hover,
+section.order .content a.btn:focus,
+section.order .content a.btn:active {
+    color: #F3F0EC;
+    background-color: #352F29;
+    transition: all 350ms ease-in;
+}
+
+section.cupcakes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.cupcakes .content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+section.cupcakes .content h1 {
+    color: #5F4A33;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+section.cupcakes .content p {
+    color: #5F4A33;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+section.cupcakes .content span {
+    display: block;
+    color: #5F4A33;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+section.cupcakes .image img {
+    width: 100%;
+}
+
+section.cupcakes .image img.margin {
+    margin-top: -20%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: -40%;
+    background-color: #F3F0EC;
+    z-index: 9999;
+}
+
+footer h1 {
+    font-size: 1em;
+    color: #5F4A33;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 130px;
+}
+
+footer .social img {
+    margin: 0 20px;
+}
+
+footer span {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    color: #5F4A33;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
