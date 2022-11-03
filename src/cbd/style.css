@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boxs;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
     font-family: sans-serif;
+    color: #5F4A33;
+    user-select: none;
 }
 
 header {
@@ -15,10 +18,117 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+header ul.links {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    top: 0;
+    right: -100vw;
+    background-color: #FFFFFF;
+    transition: all 250ms ease-out;
+    list-style: none;
+}
+
+header ul.links img {
+    display: block;
+    margin: 12px auto 60px;
+}
+
+header ul.links li {
+    font-weight: 500;
+    font-size: 1.7em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header ul.links li a {
+    color: #5F4A33;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+}
+
+header ul.links li a:hover,
+header ul.links li a:focus,
+header ul.links li a:active {
+    color: #A8947E;
+    transition: all 350ms ease-in;
+}
+
+header ul.links p {
+    display: block;
+    font-size: 1.1em;
+    color: #5F4A33;
+    width: 220px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+header ul.links .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 250px;
+    margin: 20px auto 0;
+}
+
+header ul.links .buttons a.btn {
+    display: block;
+    width: 45%;
+    padding: 3% 0;
+    margin: 0 auto;
+    color: #5F4A33;
+    background-color: #F3F0EC;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+}
+
+header ul.links .buttons a.btn:hover,
+header ul.links .buttons a.btn:focus,
+header ul.links .buttons a.btn:active {
+    color: #F3F0EC;
+    background-color: #352F29;
+    transition: all 350ms ease-in;
+}
+
+header ul.more-links {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+header ul.more-links li {
+    font-weight: 500;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+header ul.more-links img {
+    display: inline-block;
+    margin: 0 16px 0 0;
+}
+
+.rotate {
+    position: fixed;
+    right: 4%;
+    transform: rotate(90deg);
+}
+
+.active {
+    transform: translateX(-100vw);
+    transition: all 200ms ease-in;
 }
 
 header img.logo {
-    width: 35%;
+    width: 130px;
     margin: 0 20%;
 }
 
@@ -46,6 +156,7 @@ header a.btn-modo-oscuro:active {
 header a.btn-nav {
     background: url('images/nav.png')transparent no-repeat center;
     transition: all 300ms ease-out;
+    z-index: 99999;
 }
 
 header a.btn-nav:hover,
@@ -170,7 +281,7 @@ footer {
     width: 100%;
     margin-top: -40%;
     background-color: #F3F0EC;
-    z-index: 9999;
+    z-index: 999;
 }
 
 footer h1 {
