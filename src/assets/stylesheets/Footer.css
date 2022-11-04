@@ -1,0 +1,37 @@
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #F3F0EC;
+    z-index: 999;
+}
+
+footer h1 {
+    font-size: 1em;
+    color: #5F4A33;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 130px;
+}
+
+footer .social img {
+    margin: 0 20px;
+}
+
+footer span {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    color: #5F4A33;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

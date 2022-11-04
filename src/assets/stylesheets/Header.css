@@ -89,6 +89,7 @@ header ul.more-links {
     font-size: 0.8em;
     font-weight: 600;
     margin-top: 70px;
+    list-style: none!important;
 }
 
 header ul.more-links li {
