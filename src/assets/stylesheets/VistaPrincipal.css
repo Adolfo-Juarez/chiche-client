@@ -12,6 +12,13 @@ section.order {
     background-color: #F3F0EC;
 }
 
+section.cupcakes .contacto {
+    margin-top: -5px;
+    width: 100%;
+    height: 400px;
+    background-color: #F3F0EC;
+}
+
 section.order .content {
     width: 85%;
     height: 265px;
@@ -106,4 +113,8 @@ section.cupcakes .image img {
 
 section.cupcakes .image img.margin {
     margin-top: -20%;
+}
+
+section.cupcakes .image img.margin2 {
+    margin-bottom: -50px;
 }
