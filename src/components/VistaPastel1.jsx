@@ -18,8 +18,8 @@ function VistaPastel1() {
               <h3>Chocolate</h3>
             </div>
 
-            <div className="cuadro">
-              <img src={vainilla} className="vainilla" onClick={()=>{localStorage.setItem("biscuit","chocolate")}}/>
+            <div className="cuadro" onClick={()=>{localStorage.setItem("biscuit","vainilla")}}>
+              <img src={vainilla} className="vainilla"/>
               <h3>Vainilla</h3>
             </div>
 
@@ -31,18 +31,18 @@ function VistaPastel1() {
           </div>
           <div className="cuadros2">
             
-            <div className="cuadro">
-              <img src={redVelvet} className="redVelvet" onClick={()=>{localStorage.setItem("biscuit","red velvet")}}/>
+            <div className="cuadro"  onClick={()=>{localStorage.setItem("biscuit","red velvet")}}>
+              <img src={redVelvet} className="redVelvet"/>
               <h3>Red Velvet</h3>
             </div>
 
-            <div className="cuadro">
-              <img src={oreo} className="oreo" onClick={()=>{localStorage.setItem("biscuit","oreo")}}/>
+            <div className="cuadro" onClick={()=>{localStorage.setItem("biscuit","oreo")}}>
+              <img src={oreo} className="oreo"/>
               <h3>Oreo</h3>
             </div>
 
-            <div className="cuadro">
-              <img src={cafe} className="cafe" onClick={()=>{localStorage.setItem("biscuit","café")}}/>
+            <div className="cuadro"  onClick={()=>{localStorage.setItem("biscuit","café")}}>
+              <img src={cafe} className="cafe"/>
               <h3>Café</h3>
             </div>
 
