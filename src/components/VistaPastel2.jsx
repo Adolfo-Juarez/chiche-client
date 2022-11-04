@@ -1,4 +1,4 @@
-import "../assets/stylesheets/VistaPastel.css";
+import "../assets/stylesheets/VistaPastel2.css";
 import mermelada from "../assets/icons/Cuadro1.svg";
 import cajeta from "../assets/icons/Cuadro2.svg";
 import betunCafe from "../assets/icons/Cuadro3.svg";
@@ -10,7 +10,7 @@ import betunQueso from "../assets/icons/Cuadro8.svg";
 import betunVainilla from "../assets/icons/Cua2.svg";
 import betunOreo from "../assets/icons/Cua4.svg";
 
-function MainVistaPastel2() {
+function VistaPastel2() {
   return (
     <>
       <div className="contenedor2">
@@ -63,4 +63,4 @@ function MainVistaPastel2() {
   );
 }
 
-export default MainVistaPastel2;
+export default VistaPastel2;

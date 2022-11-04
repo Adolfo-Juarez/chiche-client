@@ -1,4 +1,4 @@
-import "../assets/stylesheets/VistaPastel.css";
+import "../assets/stylesheets/VistaPastel3.css";
 import c1 from "../assets/icons/C1.svg";
 import c2 from "../assets/icons/C2.svg";
 import c3 from "../assets/icons/C3.svg";
@@ -13,7 +13,7 @@ function VistaPastel3() {
         <h2>Cobertura del pastel</h2>
       </div>
       <div className="contenedor2">
-        <main className="main">
+        <main className="main2">
           <div className="cuadros">
             <div className="cuadro">
               <img src={c1} />
