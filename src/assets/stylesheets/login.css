@@ -53,11 +53,11 @@ body{
   
   .title-form{
     margin-bottom: 30px;
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 35px;
-
+    font-family: 'Libre Caslon Display';
   }
   
 /*   .terms{
@@ -74,7 +74,7 @@ body{
     background-color: #ffffff85;
     border: none;
     outline: none;
-    width: 81%;
+    width: 89%;
     margin-top: 20px;
     margin-left: 25px;
     margin-right: 25px;

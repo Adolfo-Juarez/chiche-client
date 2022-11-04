@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../assets/stylesheets/login.css'
 
 
-function InputLogin() {
+function InputRegister() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
@@ -33,16 +33,17 @@ function InputLogin() {
         .then(data => data.status ? alert('Registro exitoso') : alert('Ha ocurrido un error') )
         .catch(err => console.log(err));
     }
-
-
     return (  
         <>
-        <form className="section-form" onSubmit={handleSubmit}>
-        <h2 className='title-form'>BIENVENIDO</h2>
+         <form className="section-form" onSubmit={handleSubmit}>
+        <h2 className='title-form'>¡Sé parte de nosotros!</h2>
             <input type="text" className="input" placeholder="Usuario o correo electrónico" onChange={handleChangeUsername} value={username} onBlur={handleBlurUsername}/>
 
            
                 <input type="password" className="input" placeholder="Escriba su contraseña"onChange={handleChangePassword} value= {password}/>
+
+                <input type="password" className="input" placeholder="Confirme su contraseña"onChange={handleChangePassword} value= {password}/>
+        
         
             <div className="center">
                 <input type="submit" className="btn-Submit" value="Iniciar Sesión"/>
@@ -56,11 +57,8 @@ function InputLogin() {
             <a href="">Registrate aquí</a>
             </div>
         </form>
-
-
         </>
-    
     );
 }
 
-export default InputLogin;
+export default InputRegister;
