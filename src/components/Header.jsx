@@ -5,23 +5,23 @@ import imgPedidos from "../assets/img/archive.png";
 import imgAyuda from "../assets/img/question.png";
 import "../assets/stylesheets/Header.css";
 
-const toggle = document.querySelector(".btn-nav");
-const links = document.querySelector(".links");
-
-toggle.addEventListener("click", () => {
-  toggle.classList.toggle("rotate");
-  links.classList.toggle("active");
-});
-
 function Header() {
+  function handleSubmit() {
+    let toggle = document.querySelector(".btn-nav");
+    let links = document.querySelector(".links");
+
+    toggle.classList.toggle("rotate");
+    links.classList.toggle("active");
+  }
+
   return (
     <>
       <header>
         <a className="btn-modo-oscuro" href="#"></a>
         <img className="logo" src={logo} alt="Logo header" />
-        <a className="btn-nav" href="#"></a>
+        <a onClick={handleSubmit} className="btn-nav" href="#"></a>
         <ul className="links">
-          <img src={logoChico} alt="Logo nav" width="60px"/>
+          <img src={logoChico} alt="Logo nav" width="60px" />
           <li className="link">
             <a href="#">Inicio</a>
           </li>
