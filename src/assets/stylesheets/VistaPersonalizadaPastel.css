@@ -57,7 +57,7 @@
     z-index: 1;
 }
 
-.image {
+.imagePastel {
     max-width: 60px;
     height: 60px;
     object-fit: cover;
