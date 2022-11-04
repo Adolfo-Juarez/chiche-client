@@ -5,16 +5,13 @@
 }
 .main{
     width: 100%;
-<<<<<<<< HEAD:src/assets/stylesheets/MainVistaPastel2.css
     height: 440px;
-========
     height: 119px;
     background-color: #B1A393;
 }
 .main2{
     width: 100%;
     height: 119px;
->>>>>>>> 800bb55166570561438a4d8c4d8fdce13f07c30b:src/assets/stylesheets/MainVistaPastel3.css
     background-color: #B1A393;
 }
 .cuadros{
@@ -46,9 +43,7 @@ h3{
     color: #5F4A33;
     padding: 10px 0px 0px 0px;
     margin:0;
-<<<<<<<< HEAD:src/assets/stylesheets/MainVistaPastel2.css
     font-size: 18px;
-========
     font-size: 15px;
     text-align: center;
 }
@@ -58,6 +53,5 @@ h3{
     padding: 4px 0px 4px 0px;
     margin:0;
     font-size: 22px;
->>>>>>>> 800bb55166570561438a4d8c4d8fdce13f07c30b:src/assets/stylesheets/MainVistaPastel3.css
     text-align: center;
 }
