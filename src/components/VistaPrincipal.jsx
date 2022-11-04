@@ -13,7 +13,6 @@ function VistaPrincipal() {
               "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
               mollit anim id est laborum."
             </p>
-            <a className="btn" href="#">
             <a class="btn" href="/biscuit">
               Ordena aquí
             </a>

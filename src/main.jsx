@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/filling" element={<ChooseFilling />} />
         <Route path="/details" element={<ChooseDetails />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<SignUp />}/>
+        <Route path="/register" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
