@@ -7,7 +7,7 @@ function OrderPastel1() {
   return (
     <>
       <Header></Header>
-      <Barra nextpage="/filling" previouspage="#"></Barra>
+      <Barra nextpage="/biscuit" previouspage="#"></Barra>
       <VistaPersonalizadaPastel></VistaPersonalizadaPastel>
       <Footer></Footer>
     </>
