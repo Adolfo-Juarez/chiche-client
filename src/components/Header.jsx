@@ -37,7 +37,7 @@ function Header() {
             <b>Más información</b>
           </p>
           <div className="buttons">
-            <a className="btn" href="#">
+            <a className="btn" href="/register">
               Únete
             </a>
             <a className="btn" href="/login">
