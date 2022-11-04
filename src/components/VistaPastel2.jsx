@@ -6,7 +6,6 @@ import betunChocolate from "../assets/icons/Cuadro4.svg";
 import betunCereza from "../assets/icons/Cuadro6.svg";
 import hershey from "../assets/icons/Cuadro7.svg";
 import betunQueso from "../assets/icons/Cuadro8.svg";
-
 import betunVainilla from "../assets/icons/Cua2.svg";
 import betunOreo from "../assets/icons/Cua4.svg";
 
