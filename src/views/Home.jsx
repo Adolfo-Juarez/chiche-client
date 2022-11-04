@@ -7,7 +7,6 @@ function Home() {
   return (
     <>
       <Header></Header>
-      <Barra></Barra>
       <VistaPrincipal></VistaPrincipal>
       <Footer></Footer>
     </>
