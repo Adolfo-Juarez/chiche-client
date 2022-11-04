@@ -1,5 +1,5 @@
 import "../assets/stylesheets/VistaPersonalizadaPastel.css";
-import panque from "../assets/img/Panqué.png";
+import panque from "../assets/img/panque.png";
 import cookie from "../assets/img/galletas.png";
 import cake from "../assets/img/cake.png";
 import blondie from "../assets/img/blondie.png";
