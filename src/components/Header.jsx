@@ -23,10 +23,10 @@ function Header() {
         <ul className="links">
           <img src={logoChico} alt="Logo nav" width="60px" />
           <li className="link">
-            <a href="#">Inicio</a>
+            <a href="/">Inicio</a>
           </li>
           <li className="link">
-            <a href="#">Pasteles</a>
+            <a href="/biscuit">Pasteles</a>
           </li>
           <li className="link">
             <a href="#">Contáctanos</a>
@@ -40,7 +40,7 @@ function Header() {
             <a className="btn" href="#">
               Únete
             </a>
-            <a className="btn" href="#">
+            <a className="btn" href="/login">
               Inicia Sesión
             </a>
           </div>
