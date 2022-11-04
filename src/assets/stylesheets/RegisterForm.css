@@ -1,0 +1,44 @@
+.register-register{
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(66, 38, 38, 0.473);
+}
+.register-title{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+.labels-register{
+    margin-left: -115px;
+    color: #f3f0f3;
+    margin-top: 12px;
+    align-self: center;
+}
+
+.input-register{
+    margin-bottom: 12px;
+    border:none;
+    font-size: 19px;
+    padding: 3px 5px;
+}
+
+.register-btn{
+    font-size: 16px;
+    background-color: #fff;
+    color: #181515;
+    padding: 5px 6px;
+    border: none;
+    margin-top: 12px;
+}
+
+.register-btn:hover{
+    cursor: pointer;
+    transition: all 200ms;
+    background-color: #181515;
+    color: #fff
+}

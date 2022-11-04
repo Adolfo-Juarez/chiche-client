@@ -14,6 +14,7 @@ function VistaPrincipal() {
               mollit anim id est laborum."
             </p>
             <a className="btn" href="#">
+            <a class="btn" href="/biscuit">
               Ordena aquí
             </a>
           </div>

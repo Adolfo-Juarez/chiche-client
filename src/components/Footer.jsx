@@ -1,6 +1,6 @@
-import imgFacebook from "../assets/img/Facebook.png";
-import imgTwitter from "../assets/img/Twitter.png";
-import imgInstagram from "../assets/img/Instagram.png";
+import imgFacebook from "../assets/img/facebook.png";
+import imgTwitter from "../assets/img/twitter.png";
+import imgInstagram from "../assets/img/instagram.png";
 import "../assets/stylesheets/Footer.css";
 
 function Footer() {
