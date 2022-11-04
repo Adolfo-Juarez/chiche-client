@@ -1,0 +1,109 @@
+main.home {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.order {
+    width: 100%;
+    height: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F0EC;
+}
+
+section.order .content {
+    width: 85%;
+    height: 265px;
+    background-color: #FFFFFF;
+}
+
+section.order .content h1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    color: #5F4A33;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+section.order .content p {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6%;
+    color: #5F4A33;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+section.order .content a.btn {
+    display: block;
+    width: 35%;
+    padding: 3% 0;
+    margin: 0 auto;
+    margin-top: 7.5%;
+    color: #5F4A33;
+    background-color: #F3F0EC;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+}
+
+section.order .content a.btn:hover,
+section.order .content a.btn:focus,
+section.order .content a.btn:active {
+    color: #F3F0EC;
+    background-color: #352F29;
+    transition: all 350ms ease-in;
+}
+
+section.cupcakes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.cupcakes .content {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+section.cupcakes .content h1 {
+    color: #5F4A33;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+section.cupcakes .content p {
+    color: #5F4A33;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+section.cupcakes .content span {
+    display: block;
+    color: #5F4A33;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+section.cupcakes .image img {
+    width: 100%;
+}
+
+section.cupcakes .image img.margin {
+    margin-top: -20%;
+}
