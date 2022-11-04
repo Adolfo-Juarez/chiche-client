@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import InputLogin from "../components/InputLogin";
 import '../assets/stylesheets/login.css'
 
 function Login() {
@@ -45,22 +44,23 @@ function Login() {
         <div className='display-center background-login'>
          <form className="section-form" onSubmit={handleSubmit}>
         <>
-            <div className="form-chiche">
-                <input type="text" className="input-50" placeholder="Nombre (s)" onChange={handleChangeName} value={name}/>
-                <input type="text" className="input-50" placeholder="Apellido (s)" onChange={handleChangeLastname}  value={lastname}/>
-            </div>
-            <input type="text" className="input-100" placeholder="Usuario" onChange={handleChangeUsername} value={username} onBlur={handleBlurUsername}/>
-            
+        <h2 className='title-form'>BIENVENIDO</h2>
+            <input type="text" className="input" placeholder="Usuario o correo electrónico" onChange={handleChangeUsername} value={username} onBlur={handleBlurUsername}/>
 
-
-            <div className="form-chiche">
-                <input type="password" className="input-50" placeholder="Escriba su contraseña"onChange={handleChangePassword} value= {password}/>
-                <input type="password" className="input-50" placeholder="Confirma contraseña" onChange={handleChangePassword}/>
-            </div>
+           
+                <input type="password" className="input" placeholder="Escriba su contraseña"onChange={handleChangePassword} value= {password}/>
+        
             <div className="center">
-                <input type="submit" className="btn-Submit" value="Registrarse"/>
+                <input type="submit" className="btn-Submit" value="Iniciar Sesión"/>
             </div>
 
+            <div className='center'>
+                <p>¿No tienes una cuenta?</p>
+            </div>
+
+            <div className='center'>
+            <a href="">Registrate aquí</a>
+            </div>
         
         </>
         </form>

@@ -1,11 +1,18 @@
-.background-login{
+body{
   margin: 0;
-  padding: 0%;
-    width: 100%;
-    height: 1000px;
-    background: url('../img/img-3.jpeg');
-    background-size: cover;
 }
+.background-login{
+  position: absolute;
+   margin: 0;
+   padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/img-3.jpeg');
+    background-size:cover;
+    background-position: center;
+}
+
+
 /*
 .text-login{
     color: #ffffff;
@@ -37,24 +44,23 @@
   
   .section-form{
     width: 500px;
-    height: 550px;
-    border-radius: 45px;
-    background-color: #24262bb9;
-    font-family: 'Dosis', sans-serif;
+    height: 667px;
+    background-color: #ffffff34;
     color: aliceblue;
-    filter:drop-shadow(10px 10px 100px  black);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(6px);
   }
+
   
   .title-form{
-    margin: 30px 10px;
+    margin-bottom: 30px;
+    margin-top: 80px;
     text-align: center;
-    color: aliceblue;
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+
   }
   
-  .terms{
+/*   .terms{
     text-align: center;
     color: #4FA3A5;
   }
@@ -62,21 +68,20 @@
     text-align: center;
     color: #fff;
     text-decoration: none;
-  }
+  } */
   
-  .input-50{
-    width: 46.7%;
-    margin: 20px;
-    padding: 10px;
-    font-family: 'Staatliches';
+  .input{
+    background-color: #ffffff85;
+    border: none;
+    outline: none;
+    width: 81%;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    padding: 15px;
   }
-  
-  .input-100{
-    width: 88%;
-    margin: 20px;
-    padding: 10px;
-    font-family: 'Staatliches';
-  }
+  .input::placeholder { color: #352F29; }
   
   .form-chiche{
     display: flex;
@@ -92,19 +97,41 @@
   }
   
   .btn-Submit{
-    width: 260px;
-    height: 50px;
-    background-color: aliceblue;
-    color: #4FA3A5;
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    background-color: #F3F0EC;
+    color: #5F4A33;
     transition: all .7s;
-    font-family: 'Staatliches';
     font-size: 20px;
-    border-radius: 10px;
     cursor: pointer;
+    border: none;
+    font-family: 'Libre Caslon Display';
   }
   
   .btn-Submit:hover{
     transition: all .7s;
-    background-color: #4FA3A5;
-    color: aliceblue;
+    background-color: #352F29;
+    color: #F3F0EC;
   }
+
+  .center p{
+    margin-top: 20px;
+    font-family: 'Libre Caslon Display';
+    font-size: 18px;
+  }
+
+  .center a{
+    color: #352F29;
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Libre Caslon Display';
+    transition: all .7s;
+    font-size: 18px;
+  }
+
+  .center a:hover{
+    color: #F3F0EC;
+    transition: all .7s;
+  }
+  

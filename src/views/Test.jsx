@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../assets/stylesheets/App.css'
 import ComponentTest from '../components/ComponentTest'
 import Login from './Login'
 
@@ -8,7 +7,7 @@ function Test() {
 
   return (
     <> {/* Para hacer las pruebas de sus componentes, cambien el ComponentTest por los suyos */}
-      <Login></Login>
+      <ComponentTest></ComponentTest>
     </>
   )
 }
