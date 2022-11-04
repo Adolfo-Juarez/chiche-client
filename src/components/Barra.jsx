@@ -7,7 +7,7 @@ function Barra(){
         <>
         <div className="contenedor">
             <a href=""><img src={back}/></a>
-            <h2>Sabor del bizcocho:</h2>
+            <h2>Sabor del relleno:</h2>
             <a href=""><img src={next}/></a>
         </div>
         </>
