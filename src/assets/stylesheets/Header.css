@@ -106,7 +106,6 @@ header ul.more-links img {
 
 .rotate {
     position: fixed;
-    right: 4%;
     transform: rotate(90deg);
 }
 
@@ -115,9 +114,8 @@ header ul.more-links img {
     transition: all 200ms ease-in;
 }
 
-header img.logo {
-    width: 130px;
-    margin: 0 20%;
+header .logo {
+    width: 130px
 }
 
 header a.btn-modo-oscuro,
@@ -129,6 +127,8 @@ header a.btn-nav {
 }
 
 header a.btn-modo-oscuro {
+    position: absolute;
+    left: 8%;
     background: url('../img/modo-oscuro.png')transparent no-repeat;
     transition: all 300ms ease-out;
 }
@@ -141,6 +141,8 @@ header a.btn-modo-oscuro:active {
 }
 
 header a.btn-nav {
+    position: absolute;
+    right: 8%;
     background: url('../img/nav.png')transparent no-repeat center;
     transition: all 300ms ease-out;
     z-index: 99999;

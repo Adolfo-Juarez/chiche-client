@@ -18,7 +18,11 @@ function Header() {
     <>
       <header>
         <a className="btn-modo-oscuro" href="#"></a>
-        <img className="logo" src={logo} alt="Logo header" />
+        <div>
+          <a href="/">
+            <img className="logo" src={logo} alt="Logo header" />
+          </a>
+        </div>
         <a onClick={handleSubmit} className="btn-nav" href="#"></a>
         <ul className="links">
           <img src={logoChico} alt="Logo nav" width="60px" />
