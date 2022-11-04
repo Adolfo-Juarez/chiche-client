@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Barra from '../components/Barra'
 import Header from '../components/Header'
-import MainVistaPastel2 from '../components/MainVistaPastel2'
+import MainVistaPastel3 from '../components/MainVistaPastel3'
 
 
 /* import '../assets/stylesheets/App.css' */
@@ -15,7 +15,7 @@ function Test() {
       {/* <ComponentTest/> */}
       <Header></Header>
       <Barra></Barra>
-      <MainVistaPastel2></MainVistaPastel2>
+      <MainVistaPastel3></MainVistaPastel3>  
     </>
   )
 }
