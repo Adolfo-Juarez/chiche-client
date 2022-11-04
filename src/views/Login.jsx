@@ -42,7 +42,7 @@ function Login() {
 
     return ( 
         <>
-        <div className='display-center'>
+        <div className='display-center background-login'>
          <form className="section-form" onSubmit={handleSubmit}>
         <>
             <div className="form-chiche">
