@@ -26,7 +26,7 @@ function Header() {
             <a href="/">Inicio</a>
           </li>
           <li className="link">
-            <a href="/biscuit">Pasteles</a>
+            <a href="/choose">Pasteles</a>
           </li>
           <li className="link">
             <a href="/contact">Contáctanos</a>

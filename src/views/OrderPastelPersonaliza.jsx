@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Barra from "../components/Barra";
-import VistaPastel1 from "../components/VistaPastel1";
+import VistaPersonalizadaPastel from "../components/VistaPersonalizadaPastel";
 import Footer from "../components/Footer";
 
 function OrderPastel1() {
@@ -8,7 +8,7 @@ function OrderPastel1() {
     <>
       <Header></Header>
       <Barra nextpage="/filling" previouspage="/"></Barra>
-      <VistaPastel1></VistaPastel1>
+      <VistaPersonalizadaPastel></VistaPersonalizadaPastel>
       <Footer></Footer>
     </>
   );

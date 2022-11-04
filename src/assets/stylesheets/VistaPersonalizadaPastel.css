@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+.texto {
+    display: flex;
+    justify-content: flex-start;
+    padding: 28px 0px 0px 70px;
+}
+
+.texto h2 {
+    font-family: Libre Caslon Text;
+    font-size: 30px;
+
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5F4A33;
+    font-family: libre Caslon Display;
+    font-size: 30px;
+}
+
+.container-cards {
+    background-image: url("../img/image8.jpg");
+    height: 450px;
+
+    margin-top: -10%;
+    z-index: -3;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -100%;
+    z-index: 1;
+}
+
+.card {
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    height: 131px;
+    width: 138px;
+    border-radius: 20px;
+
+    display: flex;
+    background-size: cover;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    margin: 5px;
+    align-content: center;
+    background-color: rgba(243, 240, 236, 0.50);
+    align-items: center;
+    z-index: 1;
+}
+
+.image {
+    max-width: 60px;
+    height: 60px;
+    object-fit: cover;
+    position: absolute;
+    align-items: center;
+    position: absolute;
+    left: 27.48%;
+    right: 26.72%;
+    top: 14.49%;
+    bottom: 42.03%;
+    opacity: 100%;
+}
+
+.card:hover .card {
+    opacity: 3;
+    transform: scale(1);
+}
+
+.card img {
+    object-fit: cover;
+    transition: transform .8s ease;
+
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card img {
+    transition: transform .8s ease;
+    width: 100vw;
+}
+
+.card-top {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
+    opacity: 100%;
+    transition: transform .4s ease 0s;
+}
+
+
+.card-top h2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: rgba(95, 74, 51, 1);
+    font-family: libre Caslon Display;
+}

@@ -23,9 +23,7 @@ function VistaPrincipal() {
           <div className="image">
             <img src={cupcakes} alt="Cupcakes" />
           </div>
-          <div className="contacto">
-            
-          </div>
+          <div className="contacto"></div>
           <div className="image">
             <img className="margin2" src={cupcakes2} alt="Cupcakes" />
           </div>

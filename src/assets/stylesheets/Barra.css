@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 
-.contenedor{
+.contenedor {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 15px;
 }
-h2{
+
+h2 {
     color: #5F4A33;
     font-family: Libre Caslon Display;
 }

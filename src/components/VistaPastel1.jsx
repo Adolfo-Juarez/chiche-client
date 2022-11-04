@@ -12,40 +12,66 @@ function VistaPastel1() {
       <div className="contenedor2">
         <main className="main">
           <div className="cuadros">
-
-            <div className="cuadro" onClick={()=>{localStorage.setItem("biscuit","chocolate")}}>
+            <div
+              className="cuadro"
+              onClick={() => {
+                localStorage.setItem("biscuit", "chocolate");
+              }}
+            >
               <img src={cacao} className="cacao" />
               <h3>Chocolate</h3>
             </div>
 
-            <div className="cuadro" onClick={()=>{localStorage.setItem("biscuit","vainilla")}}>
-              <img src={vainilla} className="vainilla"/>
+            <div
+              className="cuadro"
+              onClick={() => {
+                localStorage.setItem("biscuit", "vainilla");
+              }}
+            >
+              <img src={vainilla} className="vainilla" />
               <h3>Vainilla</h3>
             </div>
 
-            <div className="cuadro" onClick={()=>{localStorage.setItem("biscuit","funfetti")}}>
+            <div
+              className="cuadro"
+              onClick={() => {
+                localStorage.setItem("biscuit", "funfetti");
+              }}
+            >
               <img src={funfetti} className="funfetti" />
               <h3>Funfetti</h3>
             </div>
-
           </div>
           <div className="cuadros2">
-            
-            <div className="cuadro"  onClick={()=>{localStorage.setItem("biscuit","red velvet")}}>
-              <img src={redVelvet} className="redVelvet"/>
+            <div
+              className="cuadro"
+              onClick={() => {
+                localStorage.setItem("biscuit", "red velvet");
+              }}
+            >
+              <img src={redVelvet} className="redVelvet" />
               <h3>Red Velvet</h3>
             </div>
 
-            <div className="cuadro" onClick={()=>{localStorage.setItem("biscuit","oreo")}}>
-              <img src={oreo} className="oreo"/>
+            <div
+              className="cuadro"
+              onClick={() => {
+                localStorage.setItem("biscuit", "oreo");
+              }}
+            >
+              <img src={oreo} className="oreo" />
               <h3>Oreo</h3>
             </div>
 
-            <div className="cuadro"  onClick={()=>{localStorage.setItem("biscuit","café")}}>
-              <img src={cafe} className="cafe"/>
+            <div
+              className="cuadro"
+              onClick={() => {
+                localStorage.setItem("biscuit", "café");
+              }}
+            >
+              <img src={cafe} className="cafe" />
               <h3>Café</h3>
             </div>
-
           </div>
         </main>
       </div>

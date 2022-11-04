@@ -2,7 +2,7 @@ import "../assets/stylesheets/Barra.css";
 import next from "../assets/icons/Next.svg";
 import back from "../assets/icons/Back.svg";
 
-function Barra({nextpage, previouspage}) {
+function Barra({ nextpage, previouspage }) {
   return (
     <>
       <div className="contenedor">
