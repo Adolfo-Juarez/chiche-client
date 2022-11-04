@@ -5,6 +5,7 @@ import ChooseBiscuit from "./views/OrderPastel1";
 import ChooseFilling from "./views/OrderPastel2";
 import ChooseDetails from "./views/OrderPastel3";
 import Login from "./views/Login";
+import Contactanos from './views/Contactanos'
 import "./assets/stylesheets/index.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/details" element={<ChooseDetails />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
+        <Route path="/contact" element={<Contactanos/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -29,7 +29,7 @@ function Header() {
             <a href="/biscuit">Pasteles</a>
           </li>
           <li className="link">
-            <a href="#">Contáctanos</a>
+            <a href="/contact">Contáctanos</a>
           </li>
           <p>
             Se parte de nosotros para obtener los mejores productos y
