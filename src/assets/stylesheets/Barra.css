@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 15px;
 }
 h2{
     color: #5F4A33;

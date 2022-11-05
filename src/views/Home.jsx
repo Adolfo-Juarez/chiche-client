@@ -1,16 +1,14 @@
 import Header from "../components/Header";
-import Barra from "../components/Barra";
-import MainVistaPastel3 from "../components/MainVistaPastel3";
+import VistaPrincipal from "../components/VistaPrincipal";
 import Footer from "../components/Footer";
 
-function Test() {
+function Home() {
   return (
     <>
       <Header></Header>
-      <Barra></Barra>
-      <MainVistaPastel3></MainVistaPastel3>
+      <VistaPrincipal></VistaPrincipal>
       <Footer></Footer>
     </>
   );
 }
-export default Test;
+export default Home;

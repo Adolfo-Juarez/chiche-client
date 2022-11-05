@@ -1,19 +1,19 @@
-import "../assets/stylesheets/MainVistaPastel3.css";
-import c1 from '../assets/icons/C1.svg'
-import c2 from '../assets/icons/C2.svg'
-import c3 from '../assets/icons/C3.svg'
-import c4 from '../assets/icons/C4.svg'
-import c5 from '../assets/icons/C5.svg'
-import c6 from '../assets/icons/C6.svg'
+import "../assets/stylesheets/VistaPastel3.css";
+import c1 from "../assets/icons/C1.svg";
+import c2 from "../assets/icons/C2.svg";
+import c3 from "../assets/icons/C3.svg";
+import c4 from "../assets/icons/C4.svg";
+import c5 from "../assets/icons/C5.svg";
+import c6 from "../assets/icons/C6.svg";
 
-function MainVistaPastel3() {
+function VistaPastel3() {
   return (
     <>
       <div className="sub1">
         <h2>Cobertura del pastel</h2>
       </div>
       <div className="contenedor2">
-        <main className="main">
+        <main className="main2">
           <div className="cuadros">
             <div className="cuadro">
               <img src={c1} />
@@ -60,4 +60,4 @@ function MainVistaPastel3() {
   );
 }
 
-export default MainVistaPastel3;
+export default VistaPastel3;

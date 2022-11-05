@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+.contenedor2{
+    padding: 15px 0px 0px 0px;
+}
+.main{
+    width: 100%;
+    height: 400px;
+    background-color: #B1A393;
+}
+.cuadros{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px 0px 20px;
+}
+.cuadros2{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px 0px 20px;
+}
+.cuadro{
+    background-color: #F3F0EC;
+    width: 105px;
+    height: 120px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cuadro img{
+    width: 43%;
+    height: 49px;
+}
+h3{
+    font-family: Libre Caslon Display;
+    color: #5F4A33;
+    padding: 10px 0px 0px 0px;
+    margin:0;
+    font-size: 18px;
+}
+
+@media screen and (width: 350px){
+    body{
+      background-color: black;
+    }
+  }
+  
