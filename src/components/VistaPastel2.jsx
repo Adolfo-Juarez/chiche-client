@@ -15,47 +15,61 @@ function VistaPastel2() {
       <div className="contenedor2">
         <main className="main">
           <div className="cuadros">
-            <div className="cuadro">
+            
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","mermelada de fresa")}}>
               <img src={mermelada} />
               <h3>Mermelada de fresa</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling", "cajeta")}}>
               <img src={cajeta} />
               <h3>Cajeta</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","betún de café")}}>
               <img src={betunCafe} />
               <h3>Betún de café</h3>
             </div>
+
           </div>
-          <div className="cuadros2">
+
+          <div className="cuadros2" >
+
             <div className="cuadro">
-              <img src={betunChocolate} />
+              <img src={betunChocolate} onClick={()=>{localStorage.setItem("filling","betún de chocolate")}}/>
               <h3>Betún de chocolate</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","betún de vainilla")}}>
               <img src={betunVainilla} />
               <h3>Betún de vainilla</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","betún de cereza")}}>
               <img src={betunCereza} />
               <h3>Betún de cereza</h3>
             </div>
+
           </div>
           <div className="cuadros3">
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","ganage de Hersheys")}}>
               <img src={hershey} />
               <h3>Ganage de Hershey's</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","betún de queso crema")}}>
               <img src={betunQueso} />
               <h3>Betún de queso crema</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("filling","betún de oreo")}}>
               <img src={betunOreo} />
               <h3>Betún de oreo</h3>
             </div>
+
           </div>
+
         </main>
       </div>
     </>
