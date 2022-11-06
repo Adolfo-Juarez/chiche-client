@@ -8,7 +8,7 @@ function Footer() {
     <>
       <footer>
         <h1>Envíanos tus comentarios</h1>
-        <div class="social">
+        <div className="social">
           <img src={imgFacebook} alt="Facebook" />
           <img src={imgTwitter} alt="Twitter" />
           <img src={imgInstagram} alt="Instagram" />

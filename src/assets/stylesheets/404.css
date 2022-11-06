@@ -1,0 +1,16 @@
+.not-found-header{
+    margin: 30px 0;
+    font-size: 150px;
+    text-align: center;
+}
+
+.not-found-caption{
+    margin: 30px 0px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.not-found-back{
+    text-align: center;
+    margin: 30px 0 50px;
+}

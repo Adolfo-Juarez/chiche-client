@@ -15,14 +15,17 @@ function VistaPastel3() {
       <div className="contenedor2">
         <main className="main2">
           <div className="cuadros">
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("coverage","betún de mantequilla")}}>
               <img src={c1} />
               <h3>Betún de matequilla</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("coverage","crema pastelera")}}>
               <img src={c2} />
               <h3>Crema pastelera</h3>
             </div>
+
           </div>
         </main>
         <div className="sub1">
@@ -30,29 +33,35 @@ function VistaPastel3() {
         </div>
         <div className="main2">
           <div className="cuadros">
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("design","impresiones")}}>
               <img src={c3} />
               <h3>Impresiones</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro" onClick={()=>{localStorage.setItem("design","con crema de mantequilla")}}>
               <img src={c4} />
               <h3>Con crema de mantequilla</h3>
             </div>
+
           </div>
         </div>
         <div className="sub1">
           <h2>Formas</h2>
         </div>
-        <div className="main2">
+        <div className="main2">          
           <div className="cuadros">
-            <div className="cuadro">
+
+            <div className="cuadro"  onClick={()=>{localStorage.setItem("shape","circular")}}>
               <img src={c5} />
               <h3>Circular</h3>
             </div>
-            <div className="cuadro">
+
+            <div className="cuadro"  onClick={()=>{localStorage.setItem("shape","corazon")}}>
               <img src={c6} />
               <h3>Corazón</h3>
             </div>
+
           </div>
         </div>
       </div>
