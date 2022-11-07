@@ -59,7 +59,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/help">
                 <img src={imgAyuda} alt="Handbag" />
                 Ayuda
               </a>

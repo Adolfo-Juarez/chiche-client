@@ -52,3 +52,12 @@ h3 {
         background-color: black;
     }
 }
+
+.selected{
+    box-shadow: #fff0dc 1px 1px 8px;
+    text-shadow: #ffd8a4 1px 1px 8px;;
+}
+
+.unselected{
+    background-color: #d8d8d8;
+}
