@@ -1,8 +1,7 @@
-import "../assets/stylesheets/RegisterForm.css";
-import axios from "axios"; // Para hacer peticiones
-import { useState, useEffect } from "react"; // Para manejar estados
-import { Navigate, useNavigate } from "react-router-dom"; // Para redirigir la página
-import config from "../resources/config.json";
+import "../assets/stylesheets/Forms.css";
+import { useEffect, useState } from "react"; // Para manejar estados
+import { useNavigate } from "react-router-dom"; // Para redirigir la página
+import { isAuthenticated, register } from "../resources/Auth";
 
 function RegisterForm() {
   const navigate = useNavigate();
@@ -11,30 +10,23 @@ function RegisterForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const sendRegister = (e) => {
-    e.preventDefault();
-    axios
-      .post(`${config.host}user`, {
-        username: username,
-        email: email,
-        password: password,
-        role: "client",
-      })
-      .then((response) => {
-        localStorage.setItem("user", JSON.stringify(response.data));
-      });
-  };
+  function sendRegister(e) {
+    e.preventDefault()
+    register(username, email, password).then(
+      (data) => {
+        if (!data.logged) {
+          alert("Este nombre de usuario ya está en uso")
+        } else {
+          navigate("/")
+        }
+      }
+    )
+  }
 
-  const isLogged = () => {
-    if (localStorage.getItem("user")) {
-      alert("Ya tienes una sesión activa");
-      navigate("/");
-    }
-  };
-
-  useEffect(() => {
-    isLogged();
-  }, []);
+  useEffect(() => { if(isAuthenticated()){
+    alert("Ya tienes una sesión iniciada")
+    navigate("/")
+  } }, [])
 
   return (
     <form className="register-register" onSubmit={sendRegister}>
@@ -65,7 +57,8 @@ function RegisterForm() {
       />
 
       <label className="labels-register" htmlFor="password">
-        Contraseña
+        {/* No nos critiquen :( */}
+        Contraseña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </label>
       <input
         type="password"
