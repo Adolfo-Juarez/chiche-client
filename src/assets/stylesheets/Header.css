@@ -129,16 +129,17 @@ header a.btn-nav {
 header a.btn-modo-oscuro {
     position: absolute;
     left: 8%;
-    background: url('../img/modo-oscuro.png')transparent no-repeat;
+    background: url('../img/GitHub-Mark-64px.png')transparent no-repeat;
+    background-size: cover;
     transition: all 300ms ease-out;
 }
 
-header a.btn-modo-oscuro:hover,
+/* header a.btn-modo-oscuro:hover,
 header a.btn-modo-oscuro:focus,
 header a.btn-modo-oscuro:active {
     background: url('../img/modo-oscuro-hover.png')transparent no-repeat;
     transition: all 350ms ease-in;
-}
+} */
 
 header a.btn-nav {
     position: absolute;

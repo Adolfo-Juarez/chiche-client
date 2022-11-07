@@ -4,6 +4,8 @@ import imgBolsa from "../assets/img/handbag.png";
 import imgPedidos from "../assets/img/archive.png";
 import imgAyuda from "../assets/img/question.png";
 import "../assets/stylesheets/Header.css";
+import { isAuthenticated } from "../resources/Auth";
+import ButtonsAccess from "./ButtonsAccess";
 
 function Header() {
   function handleSubmit() {
@@ -17,7 +19,7 @@ function Header() {
   return (
     <>
       <header>
-        <a className="btn-modo-oscuro" href="#"></a>
+        <a className="btn-modo-oscuro" href="https://github.com/Adolfo-Juarez/chiche-server"></a>
         <div>
           <a href="/">
             <img className="logo" src={logo} alt="Logo header" />
@@ -41,12 +43,7 @@ function Header() {
             <b>Más información</b>
           </p>
           <div className="buttons">
-            <a className="btn" href="/register">
-              Únete
-            </a>
-            <a className="btn" href="/login">
-              Inicia Sesión
-            </a>
+            <ButtonsAccess />
           </div>
           <ul className="more-links">
             <li>
