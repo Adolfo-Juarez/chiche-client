@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "./views/SignUp";
 import E404 from "./views/404";
 import Help from "./views/Ayuda";
+import Order from "./views/Order";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/register" element={<SignUp />} />
         <Route path="/contact" element={<Contactanos />} />
         <Route path="/help" element={<Help/>} />
+        <Route path="/order" element={<Order/>}/>
         <Route path="/*" element={<E404/>}/>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,46 @@
+.title-order{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.almost-ready{
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.cause-order{
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.des-order{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.subtotal-title{
+    font-size: 20px;
+    margin-top: 29px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtotal-order{
+    text-align: center;
+}
+
+.total-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.total-order{
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 42px;
+    font-weight: 600;
+}

@@ -19,7 +19,7 @@ function Header() {
   return (
     <>
       <header>
-        <a className="btn-modo-oscuro" href="https://github.com/Adolfo-Juarez/chiche-server"></a>
+        <a className="btn-modo-oscuro" href="https://github.com/Adolfo-Juarez/chiche-client"></a>
         <div>
           <a href="/">
             <img className="logo" src={logo} alt="Logo header" />
@@ -47,13 +47,7 @@ function Header() {
           </div>
           <ul className="more-links">
             <li>
-              <a href="#">
-                <img src={imgBolsa} alt="Handbag" />
-                Bolsa de compra
-              </a>
-            </li>
-            <li>
-              <a href="#">
+              <a href="/order">
                 <img src={imgPedidos} alt="Handbag" />
                 Pedidos
               </a>
