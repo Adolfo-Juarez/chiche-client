@@ -57,12 +57,14 @@ function Header() {
         </div>
         <a onClick={handleSubmit} className="btn-nav" href="#"></a>
         <ul className="links">
-          <img src={logoChico} alt="Logo nav" width="60px" />
+          <a href="/">
+            <img src={logoChico} alt="Logo nav" width="60px" />
+          </a>
           <li className="link">
             <a href="/">Inicio</a>
           </li>
           <li className="link">
-            <a href="/choose">Pasteles</a>
+            <a href="/choose">Menú</a>
           </li>
           <li className="link">
             <a href="/contact">Contáctanos</a>

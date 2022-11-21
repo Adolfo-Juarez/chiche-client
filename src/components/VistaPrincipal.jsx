@@ -1,5 +1,7 @@
 import cupcakes from "../assets/img/img-6.jpeg";
 import cupcakes2 from "../assets/img/cupcakes2.png";
+import header1 from "../assets/img/header1.png";
+import header2 from "../assets/img/header2.png";
 import "../assets/stylesheets/VistaPrincipal.css";
 
 function VistaPrincipal() {
@@ -13,9 +15,13 @@ function VistaPrincipal() {
               "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
               mollit anim id est laborum."
             </p>
-            <a className="btn" href="/choose">
-              Ordena aquí
-            </a>
+            <div className="button-images">
+              <img className="img1" src={header1} alt="Header 1" />
+              <a className="btn" href="/choose">
+                Ordena aquí
+              </a>
+              <img src={header2} alt="Header 2" />
+            </div>
           </div>
         </section>
         <section className="cupcakes">
