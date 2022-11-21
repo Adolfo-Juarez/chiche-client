@@ -252,6 +252,47 @@ header {
     width: 140px;
 }
 
+@media only screen and (max-width: 1050px) {
+    .FlexContainer div.nav ul li:first-child {
+        margin-right: 50px;
+    }
+
+    .FlexContainer div.nav ul li:last-child {
+        margin-left: 50px;
+    }
+
+    .FlexContainer div.login .btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .FlexContainer div.flex-logo {
+        width: 15%;
+    }
+
+    .FlexContainer div.nav {
+        width: 50%;
+    }
+
+    .FlexContainer div.login {
+        width: 15%;
+    }
+
+    .FlexContainer div.nav ul li:first-child {
+        margin-right: 25px;
+    }
+
+    .FlexContainer div.nav ul li:last-child {
+        margin-left: 25px;
+    }
+
+    .FlexContainer div.login .btn {
+        width: 80%;
+        height: 45px;
+    }
+}
+
 @media only screen and (min-width: 576px) {
     header.mobile-header {
         display: none;

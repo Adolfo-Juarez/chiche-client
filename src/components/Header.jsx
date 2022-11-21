@@ -26,14 +26,14 @@ function Header() {
             </a>
           </div>
           <div className="nav">
-            <ul className="links">
-              <li className="link">
+            <ul>
+              <li>
                 <a href="/">Inicio</a>
               </li>
-              <li className="link">
+              <li>
                 <a href="/choose">Menú</a>
               </li>
-              <li className="link">
+              <li>
                 <a href="/contact">Contáctanos</a>
               </li>
             </ul>
