@@ -19,7 +19,37 @@ function Header() {
   return (
     <>
       <header>
-        <a className="btn-modo-oscuro" href="https://github.com/Adolfo-Juarez/chiche-client"></a>
+        <section className="FlexContainer">
+          <div className="flex-logo">
+            <a href="/">
+              <img className="logo" src={logo} alt="Logo header" />
+            </a>
+          </div>
+          <div className="nav">
+            <ul className="links">
+              <li className="link">
+                <a href="/">Inicio</a>
+              </li>
+              <li className="link">
+                <a href="/choose">Menú</a>
+              </li>
+              <li className="link">
+                <a href="/contact">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+          <div className="login">
+            <a className="btn" href="/login">
+              Inicia Sesión
+            </a>
+          </div>
+        </section>
+      </header>
+      <header className="mobile-header">
+        <a
+          className="btn-modo-oscuro"
+          href="https://github.com/Adolfo-Juarez/chiche-client"
+        ></a>
         <div>
           <a href="/">
             <img className="logo" src={logo} alt="Logo header" />
