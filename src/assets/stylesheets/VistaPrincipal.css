@@ -119,6 +119,14 @@ section.cupcakes .image img.margin2 {
     margin-bottom: -50px;
 }
 
+section.order .content .button-images img.img1 {
+    display: none;
+}
+
+section.order .content .button-images img {
+    display: none;
+}
+
 @media only screen and (min-width: 576px) {
     section.order .content .button-images {
         display: flex;
@@ -131,11 +139,13 @@ section.cupcakes .image img.margin2 {
     }
 
     section.order .content .button-images img.img1 {
+        display: block;
         width: 190px;
     }
 
     section.order .content .button-images img {
-        width: 220px;
+        display: block;
+        width: 190px;
     }
 
     section.order {
@@ -176,5 +186,52 @@ section.cupcakes .image img.margin2 {
         text-decoration: none;
         border-radius: 0.4em;
         transition: all 300ms ease-out;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        section.order .content .button-images {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        section.order .content .button-images {
+            width: 90%;
+        }
+
+        section.order .content {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 830px) {
+        section.order .content .button-images {
+            width: 95%;
+        }
+
+        section.order .content {
+            width: 100%;
+        }
+
+        section.order .content h1 {
+            font-size: 2.4em;
+        }
+
+        section.order .content p {
+            font-size: 1.2em;
+        }
+
+        section.order .content a.btn {
+            font-size: 1em;
+            margin-top: 110px;
+        }
+
+        section.order .content .button-images img.img1 {
+            width: 150px;
+        }
+
+        section.order .content .button-images img {
+            width: 150px;
+        }
     }
 }
