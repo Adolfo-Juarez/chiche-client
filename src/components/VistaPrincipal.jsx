@@ -5,9 +5,28 @@ import cookie from "../assets/img/galletas.png";
 import cake from "../assets/img/cake.png";
 import cakeAbout from "../assets/img/cake-about.png";
 import blondie from "../assets/img/blondie.png";
+import gallery1 from "../assets/img/gallery1.png";
+import gallery2 from "../assets/img/gallery2.png";
+import gallery3 from "../assets/img/gallery3.png";
+import gallery4 from "../assets/img/gallery4.png";
 import "../assets/stylesheets/VistaPrincipal.css";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css/skyblue";
+import "@splidejs/react-splide/css/sea-green";
+import "@splidejs/react-splide/css/core";
 
 function VistaPrincipal() {
+  const options = {
+    type: "loop",
+    gap: "1rem",
+    autoplay: true,
+    pauseOnHover: false,
+    resetProgress: false,
+    height: "100%",
+    perPage: 4,
+  };
+
   return (
     <>
       <main className="home">
@@ -73,6 +92,39 @@ function VistaPrincipal() {
               <span>- CEO</span>
             </div>
           </div>
+        </section>
+        <section className="gallery">
+          <Splide
+            options={options}
+            aria-labelledby="autoplay-example-heading"
+            hasTrack={false}
+          >
+            <div style={{ position: "relative" }}>
+              <SplideTrack>
+                <SplideSlide>
+                  <img src={gallery1} alt="Image 1" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src={gallery2} alt="Image 2" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src={gallery3} alt="Image 3" />
+                </SplideSlide>
+                <SplideSlide>
+                  <img src={gallery4} alt="Image 4" />
+                </SplideSlide>
+              </SplideTrack>
+            </div>
+
+            <div className="splide__progress">
+              <div className="splide__progress__bar" />
+            </div>
+
+            <button className="splide__toggle">
+              <span className="splide__toggle__play">Play</span>
+              <span className="splide__toggle__pause">Pause</span>
+            </button>
+          </Splide>
         </section>
       </main>
     </>

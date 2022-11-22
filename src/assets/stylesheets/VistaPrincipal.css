@@ -151,6 +151,12 @@ section.about .content p {
     text-align: center;
 }
 
+section.gallery {
+    width: 70%;
+    margin: 0 auto;
+    background: #F3F0EC;
+}
+
 @media only screen and (max-width: 1255px) {
     section.order .content .button-images {
         width: 90%;
