@@ -2,6 +2,10 @@ import cupcakes from "../assets/img/img-6.jpeg";
 import cupcakes2 from "../assets/img/cupcakes2.png";
 import header1 from "../assets/img/header1.png";
 import header2 from "../assets/img/header2.png";
+import panque from "../assets/img/panque.png";
+import cookie from "../assets/img/galletas.png";
+import cake from "../assets/img/cake.png";
+import blondie from "../assets/img/blondie.png";
 import "../assets/stylesheets/VistaPrincipal.css";
 
 function VistaPrincipal() {
@@ -24,8 +28,37 @@ function VistaPrincipal() {
             </div>
           </div>
         </section>
+        <div className="pintura"></div>
         <section className="products">
-          <h2>Disfruta de la variedad de productos</h2>
+          <div className="text">
+            <h2>Disfruta de la variedad de productos</h2>
+          </div>
+          <div className="cards">
+            <div className="card">
+              <img className="imagePastel" src={cake} />
+              <div className="card-top">
+                <h2>Pasteles</h2>
+              </div>
+            </div>
+            <div className="card">
+              <img className="imagePastel" src={panque} />
+              <div className="card-top">
+                <h2>Panques</h2>
+              </div>
+            </div>
+            <div className="card">
+              <img className="imagePastel" src={blondie} />
+              <div className="card-top">
+                <h2>Blondies</h2>
+              </div>
+            </div>
+            <div className="card">
+              <img className="imagePastel" src={cookie} />
+              <div className="card-top">
+                <h2>Galletas</h2>
+              </div>
+            </div>
+          </div>
         </section>
         <section className="cupcakes">
           <div className="image">

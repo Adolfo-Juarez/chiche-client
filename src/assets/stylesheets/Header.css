@@ -158,6 +158,8 @@ header.mobile-header a.btn-nav:active {
 
 header {
     display: none;
+    height: 100px;
+    background: #F3F0EC;
 }
 
 .FlexContainer {
