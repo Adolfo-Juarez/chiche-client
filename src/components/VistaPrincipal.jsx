@@ -94,37 +94,39 @@ function VistaPrincipal() {
           </div>
         </section>
         <section className="gallery">
-          <Splide
-            options={options}
-            aria-labelledby="autoplay-example-heading"
-            hasTrack={false}
-          >
-            <div style={{ position: "relative" }}>
-              <SplideTrack>
-                <SplideSlide>
-                  <img src={gallery1} alt="Image 1" />
-                </SplideSlide>
-                <SplideSlide>
-                  <img src={gallery2} alt="Image 2" />
-                </SplideSlide>
-                <SplideSlide>
-                  <img src={gallery3} alt="Image 3" />
-                </SplideSlide>
-                <SplideSlide>
-                  <img src={gallery4} alt="Image 4" />
-                </SplideSlide>
-              </SplideTrack>
-            </div>
+          <div className="content">
+            <Splide
+              options={options}
+              aria-labelledby="autoplay-example-heading"
+              hasTrack={false}
+            >
+              <div style={{ position: "relative" }}>
+                <SplideTrack>
+                  <SplideSlide>
+                    <img src={gallery1} alt="Image 1" />
+                  </SplideSlide>
+                  <SplideSlide>
+                    <img src={gallery2} alt="Image 2" />
+                  </SplideSlide>
+                  <SplideSlide>
+                    <img src={gallery3} alt="Image 3" />
+                  </SplideSlide>
+                  <SplideSlide>
+                    <img src={gallery4} alt="Image 4" />
+                  </SplideSlide>
+                </SplideTrack>
+              </div>
 
-            <div className="splide__progress">
-              <div className="splide__progress__bar" />
-            </div>
+              <div className="splide__progress">
+                <div className="splide__progress__bar" />
+              </div>
 
-            <button className="splide__toggle">
-              <span className="splide__toggle__play">Play</span>
-              <span className="splide__toggle__pause">Pause</span>
-            </button>
-          </Splide>
+              <button className="splide__toggle">
+                <span className="splide__toggle__play">Play</span>
+                <span className="splide__toggle__pause">Pause</span>
+              </button>
+            </Splide>
+          </div>
         </section>
       </main>
     </>

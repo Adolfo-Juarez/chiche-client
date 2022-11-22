@@ -152,9 +152,12 @@ section.about .content p {
 }
 
 section.gallery {
+    background: #F3F0EC;
+}
+
+section.gallery .content {
     width: 70%;
     margin: 0 auto;
-    background: #F3F0EC;
 }
 
 @media only screen and (max-width: 1255px) {
