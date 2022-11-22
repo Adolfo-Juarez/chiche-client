@@ -5,6 +5,7 @@ import header2 from "../assets/img/header2.png";
 import panque from "../assets/img/panque.png";
 import cookie from "../assets/img/galletas.png";
 import cake from "../assets/img/cake.png";
+import cakeAbout from "../assets/img/cake-about.png";
 import blondie from "../assets/img/blondie.png";
 import "../assets/stylesheets/VistaPrincipal.css";
 
@@ -57,6 +58,21 @@ function VistaPrincipal() {
               <div className="card-top">
                 <h2>Galletas</h2>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="about">
+          <div>
+            <img src={cakeAbout} />
+            <div className="content">
+              <h1>Acerca de Chiché</h1>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
+                mollit anim id est laborumconsectetur qui officia deserunt
+                mollit anim id est laborumconsectetur qui officia anim id est
+                laborumconsectetur qui official“.
+              </p>
+              <span>- CEO</span>
             </div>
           </div>
         </section>

@@ -140,7 +140,7 @@ section.products {
 
 section.products .cards {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 section.products .cards .card {
@@ -155,6 +155,43 @@ section.products .cards .card-top h2 {
     font-weight: normal;
     font-size: 0.9em;
     margin-top: 4px;
+}
+
+section.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: #F3F0EC;
+}
+
+section.about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
+    margin-left: 80px;
+    background: #F3F0EC;
+}
+
+section.about .content p {
+    text-align: center;
+    margin: 40px 0;
+}
+
+section.about>div img {
+    width: 360px;
+}
+
+section.about>div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 @media only screen and (min-width: 576px) {
@@ -199,12 +236,12 @@ section.products .cards .card-top h2 {
 
     section.order .content .button-images img.img1 {
         display: block;
-        width: 190px;
+        width: 240px;
     }
 
     section.order .content .button-images img {
         display: block;
-        width: 190px;
+        width: 240px;
     }
 
     main.home {
@@ -257,6 +294,12 @@ section.products .cards .card-top h2 {
         }
     }
 
+    @media only screen and (max-width: 1070px) {
+        section.about>div img {
+            width: 280px;
+        }
+    }
+
     @media only screen and (max-width: 1000px) {
         section.order .content .button-images {
             width: 90%;
@@ -264,6 +307,38 @@ section.products .cards .card-top h2 {
 
         section.order .content {
             width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 936px) {
+        section.about {
+            height: 520px;
+        }
+
+        section.about>div {
+            display: flex;
+            flex-direction: column !important;
+        }
+
+        section.about div img {
+            margin-top: -100px;
+            margin-bottom: 130px;
+        }
+
+        section.about .content {
+            height: 0;
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    @media only screen and (max-width: 792px) {
+        section.products .cards .card {
+            margin: 50px;
+        }
+
+        section.products .text {
+            width: 53%;
         }
     }
 
