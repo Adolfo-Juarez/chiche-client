@@ -1,5 +1,3 @@
-import cupcakes from "../assets/img/img-6.jpeg";
-import cupcakes2 from "../assets/img/cupcakes2.png";
 import header1 from "../assets/img/header1.png";
 import header2 from "../assets/img/header2.png";
 import panque from "../assets/img/panque.png";
@@ -62,8 +60,8 @@ function VistaPrincipal() {
           </div>
         </section>
         <section className="about">
-          <div>
-            <img src={cakeAbout} />
+          <div className="wrap">
+            <img className="image-cake" src={cakeAbout} />
             <div className="content">
               <h1>Acerca de Chiché</h1>
               <p>
@@ -74,24 +72,6 @@ function VistaPrincipal() {
               </p>
               <span>- CEO</span>
             </div>
-          </div>
-        </section>
-        <section className="cupcakes">
-          <div className="image">
-            <img src={cupcakes} alt="Cupcakes" />
-          </div>
-          <div className="content">
-            <h1>Acerca de Chiché</h1>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
-              mollit anim id est laborumconsectetur qui officia deserunt mollit
-              anim id est laborumconsectetur qui officia anim id est
-              laborumconsectetur qui official“.
-            </p>
-            <span>- CEO</span>
-          </div>
-          <div className="image">
-            <img className="margin" src={cupcakes2} alt="Cupcakes" />
           </div>
         </section>
       </main>
