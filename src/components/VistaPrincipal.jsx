@@ -24,19 +24,22 @@ function VistaPrincipal() {
             </div>
           </div>
         </section>
+        <section className="products">
+          <h2>Disfruta de la variedad de productos</h2>
+        </section>
         <section className="cupcakes">
           <div className="image">
             <img src={cupcakes} alt="Cupcakes" />
           </div>
           <div className="content">
-            <h1>Sobre nosotros</h1>
+            <h1>Acerca de Chiché</h1>
             <p>
               "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
               mollit anim id est laborumconsectetur qui officia deserunt mollit
               anim id est laborumconsectetur qui officia anim id est
               laborumconsectetur qui official“.
             </p>
-            <span>- Leonardo Toledo</span>
+            <span>- CEO</span>
           </div>
           <div className="image">
             <img className="margin" src={cupcakes2} alt="Cupcakes" />

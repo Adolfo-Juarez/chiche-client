@@ -127,7 +127,31 @@ section.order .content .button-images img {
     display: none;
 }
 
+section.products {
+    display: none;
+}
+
 @media only screen and (min-width: 576px) {
+    section.products {
+        display: block;
+    }
+
+    section.cupcakes {
+        display: none;
+    }
+
+    section.products {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-decoration: underline;
+    }
+
+    section.products h2 {
+        font-family: sans-serif;
+    }
+
     section.order .content .button-images {
         display: flex;
         justify-content: center;
