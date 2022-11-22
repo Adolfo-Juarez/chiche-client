@@ -194,6 +194,12 @@ section.about>div {
     flex-direction: row;
 }
 
+@media only screen and (max-width: 576px) {
+    section.about {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 576px) {
     div.pintura {
         display: block;
