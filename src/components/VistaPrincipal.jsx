@@ -9,6 +9,8 @@ import gallery1 from "../assets/img/gallery1.png";
 import gallery2 from "../assets/img/gallery2.png";
 import gallery3 from "../assets/img/gallery3.png";
 import gallery4 from "../assets/img/gallery4.png";
+import gallery5 from "../assets/img/gallery5.png";
+import gallery6 from "../assets/img/gallery6.png";
 import "../assets/stylesheets/VistaPrincipal.css";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -18,13 +20,17 @@ import "@splidejs/react-splide/css/core";
 
 function VistaPrincipal() {
   const options = {
+    updateOnMove: true,
     type: "loop",
-    gap: "1rem",
-    autoplay: true,
-    pauseOnHover: false,
-    resetProgress: false,
-    height: "100%",
     perPage: 4,
+    perMove: 1,
+    focus: "center",
+    autoplay: true,
+    arrows: false,
+    pagination: false,
+    pauseOnHover: false,
+    autowidth: true,
+    autoHeight: true,
   };
 
   return (
@@ -114,17 +120,18 @@ function VistaPrincipal() {
                   <SplideSlide>
                     <img src={gallery4} alt="Image 4" />
                   </SplideSlide>
+                  <SplideSlide>
+                    <img src={gallery5} alt="Image 5" />
+                  </SplideSlide>
+                  <SplideSlide>
+                    <img src={gallery6} alt="Image 6" />
+                  </SplideSlide>
                 </SplideTrack>
               </div>
 
               <div className="splide__progress">
                 <div className="splide__progress__bar" />
               </div>
-
-              <button className="splide__toggle">
-                <span className="splide__toggle__play">Play</span>
-                <span className="splide__toggle__pause">Pause</span>
-              </button>
             </Splide>
           </div>
         </section>
