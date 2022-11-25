@@ -3,6 +3,7 @@ import imgAyuda from "../assets/img/question.png";
 import imgFacebook from "../assets/img/facebook.png";
 import imgTwitter from "../assets/img/twitter.png";
 import imgInstagram from "../assets/img/instagram.png";
+import imgGitHub from "../assets/img/GitHub-Mark-64px.png";
 import "../assets/stylesheets/Footer.css";
 
 function Footer() {
@@ -25,9 +26,18 @@ function Footer() {
           </li>
         </ul>
         <div className="social">
-          <img src={imgFacebook} alt="Facebook" />
-          <img src={imgTwitter} alt="Twitter" />
-          <img src={imgInstagram} alt="Instagram" />
+          <a href="https://github.com/Adolfo-Juarez/chiche-client">
+            <img src={imgGitHub} alt="GitHub" />
+          </a>
+          <a href="#">
+            <img src={imgFacebook} alt="Facebook" />
+          </a>
+          <a href="#">
+            <img src={imgTwitter} alt="Twitter" />
+          </a>
+          <a href="#">
+            <img src={imgInstagram} alt="Instagram" />
+          </a>
         </div>
         <span>
           © 2022 Chiché.

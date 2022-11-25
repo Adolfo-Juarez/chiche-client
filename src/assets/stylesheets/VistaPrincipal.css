@@ -29,7 +29,7 @@ section.order .content h1 {
 section.order .content p {
     width: 40%;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 3%;
     text-align: center;
     font-size: 1.2em;
     font-weight: 500;
@@ -42,7 +42,7 @@ section.order .content .button-images {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    margin-top: -80px;
+    margin-top: -50px;
 }
 
 section.order .content .button-images img.img1 {
@@ -57,15 +57,14 @@ section.order .content .button-images a.btn {
     display: block;
     width: 160px;
     margin: 0 auto;
-    margin-top: 10%;
     padding: 16px 0;
+    background: #5f4a33;
+    color: #FFFFFF;
+    border-radius: 0.4em;
     text-decoration: none;
     text-align: center;
     font-size: 0.9em;
     font-weight: 500;
-    border-radius: 0.4em;
-    background: #5f4a33;
-    color: #FFFFFF;
     transition: all 300ms ease-out;
 }
 
@@ -121,6 +120,7 @@ section.about {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 400px;
     background: #F3F0EC;
 }
 
@@ -148,7 +148,7 @@ section.about .content {
 
 section.about .content p {
     margin: 40px 0;
-    text-align: center;
+    text-align: justify;
 }
 
 section.gallery {
@@ -163,7 +163,12 @@ section.gallery .content {
 @media only screen and (max-width: 1255px) {
     section.order .content .button-images {
         width: 90%;
-        margin-top: -5%;
+    }
+}
+
+@media only screen and (max-width: 1098px) {
+    section.gallery {
+        display: none;
     }
 }
 
@@ -191,6 +196,10 @@ section.gallery .content {
         margin: 30px;
     }
 
+    section.about {
+        height: 100%
+    }
+
     section.about .wrap {
         flex-direction: column;
     }
@@ -200,7 +209,7 @@ section.gallery .content {
     }
 
     section.about .content {
-        margin: 60px 0;
+        margin: 60px 0 30px;
         margin-left: 0;
     }
 
@@ -211,12 +220,13 @@ section.gallery .content {
 
     section.order .content .button-images {
         flex-direction: column-reverse;
+        margin-top: 40px;
     }
 
     section.order .content .button-images img.img1 {
         display: block;
         width: 300px;
-        margin: 30px 0;
+        margin: 20px 0;
     }
 
     section.order .content .button-images img {

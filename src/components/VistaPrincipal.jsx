@@ -40,8 +40,10 @@ function VistaPrincipal() {
           <div className="content">
             <h1>Exquisito sabor para verdaderos conocedores</h1>
             <p>
-              "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
-              mollit anim id est laborum."
+              “Chiché es una empresa dedicada a facilitar que sus clientes
+              puedan festejar con postres de sabor y presentación únicos,
+              brindándoles además un servicio esmerado que les permita celebrar
+              sin complicarse.”
             </p>
             <div className="button-images">
               <img className="img1" src={header1} alt="Header 1" />
@@ -90,12 +92,13 @@ function VistaPrincipal() {
             <div className="content">
               <h1>Acerca de Chiché</h1>
               <p>
-                "Lorem ipsum dolor sit amet, consectetur qui officia deserunt
-                mollit anim id est laborumconsectetur qui officia deserunt
-                mollit anim id est laborumconsectetur qui officia anim id est
-                laborumconsectetur qui official“.
+                “Cada uno de nuestros postres esta realizado personalmente,
+                utilizando recetas propias, seleccionando las frutas más frescas
+                de la temporada y los mejores ingredientes, y cuidando hasta el
+                más mínimo detalle de su elaboración para ofrecer siempre la
+                calidad y buen sabor que nuestros clientes buscan.”
               </p>
-              <span>- CEO</span>
+              <span>- CEO -</span>
             </div>
           </div>
         </section>
