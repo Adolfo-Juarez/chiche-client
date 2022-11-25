@@ -1,14 +1,27 @@
-.title-help{
-    text-align: center;
-    margin: 30px 0;
+section.help {
+    background: #F3F0EC;
+    padding: 2% 0 2%;
 }
 
-.content-help{
+section.help h1.title-help {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+section.help .content-help {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.second-title{
+section.help .content-help a {
+    color: #5F4A33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.help .second-title {
     text-align: center;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
 }
