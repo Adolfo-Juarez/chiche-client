@@ -1,6 +1,6 @@
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import VistaPrincipal from "../components/VistaPrincipal";
+import Footer from "../components/Footer";
 
 function Home() {
   return (

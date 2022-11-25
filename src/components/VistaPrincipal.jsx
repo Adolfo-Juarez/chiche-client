@@ -3,8 +3,8 @@ import header2 from "../assets/img/header2.png";
 import panque from "../assets/img/panque.png";
 import cookie from "../assets/img/galletas.png";
 import cake from "../assets/img/cake.png";
-import cakeAbout from "../assets/img/cake-about.png";
 import blondie from "../assets/img/blondie.png";
+import cakeAbout from "../assets/img/cake-about.png";
 import gallery1 from "../assets/img/gallery1.png";
 import gallery2 from "../assets/img/gallery2.png";
 import gallery3 from "../assets/img/gallery3.png";
@@ -13,10 +13,7 @@ import gallery5 from "../assets/img/gallery5.png";
 import gallery6 from "../assets/img/gallery6.png";
 import "../assets/stylesheets/VistaPrincipal.css";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";
-import "@splidejs/react-splide/css/core";
 
 function VistaPrincipal() {
   const options = {
