@@ -21,6 +21,12 @@ header.mobile-header ul.links {
     list-style: none;
 }
 
+header.mobile-header ul.links>a {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+
 header.mobile-header ul.links img {
     display: block;
     margin: 12px auto 60px;
@@ -133,13 +139,6 @@ header.mobile-header a.btn-modo-oscuro {
     background-size: cover;
     transition: all 300ms ease-out;
 }
-
-/* header.mobile-header a.btn-modo-oscuro:hover,
-header.mobile-header a.btn-modo-oscuro:focus,
-header.mobile-header a.btn-modo-oscuro:active {
-    background: url('../img/modo-oscuro-hover.png')transparent no-repeat;
-    transition: all 350ms ease-in;
-} */
 
 header.mobile-header a.btn-nav {
     position: absolute;

@@ -1,11 +1,10 @@
 import logo from "../assets/icons/logo1.svg";
 import logoChico from "../assets/img/logo-chico.png";
-import imgBolsa from "../assets/img/handbag.png";
 import imgPedidos from "../assets/img/archive.png";
 import imgAyuda from "../assets/img/question.png";
-import "../assets/stylesheets/Header.css";
-import { isAuthenticated } from "../resources/Auth";
 import ButtonsAccess from "./ButtonsAccess";
+import { isAuthenticated } from "../resources/Auth";
+import "../assets/stylesheets/Header.css";
 
 function Header() {
   function handleSubmit() {

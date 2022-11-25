@@ -7,11 +7,11 @@ footer {
 }
 
 footer h1 {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #5F4A33;
     font-weight: 500;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 footer .social {
@@ -19,7 +19,7 @@ footer .social {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 130px;
+    margin-top: 40px;
 }
 
 footer .social img {
@@ -33,6 +33,41 @@ footer span {
     color: #5F4A33;
     font-weight: 500;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer ul.more-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+footer ul.more-links li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+footer ul.more-links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+footer ul.more-links li a span {
+    display: block;
+    color: #5F4A33;
+    font-size: 1em;
     margin-top: 15px;
-    margin-bottom: 10px;
+    transition: all 350ms ease-out;
+}
+
+footer ul.more-links li a:hover span,
+footer ul.more-links li a:focus span,
+footer ul.more-links li a:active span {
+    color: #A8947E;
+    transition: all 350ms ease-in;
 }
