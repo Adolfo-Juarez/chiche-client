@@ -7,13 +7,13 @@ section.order {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 500px;
+    padding-top: 20px;
     background: #F3F0EC;
 }
 
 section.order .content {
     width: 90%;
-    height: 80%;
+    height: 70%;
     background: #F3F0EC;
 }
 
@@ -27,7 +27,7 @@ section.order .content h1 {
 }
 
 section.order .content p {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 3%;
     text-align: center;
@@ -134,7 +134,7 @@ section.about .wrap {
 }
 
 section.about .wrap img.image-cake {
-    width: 350px;
+    width: 300px;
 }
 
 section.about .content {
@@ -142,7 +142,7 @@ section.about .content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 650px;
     margin-left: 6%;
 }
 
@@ -278,6 +278,10 @@ input[type="color"]:focus,
         width: 50%;
     }
 
+    section.order .content p {
+        width: 65%;
+    }
+
     section.order .content .button-images {
         width: 100%;
     }
@@ -302,6 +306,7 @@ input[type="color"]:focus,
     }
 
     section.about .wrap {
+        width: 85%;
         flex-direction: column;
     }
 
@@ -310,18 +315,18 @@ input[type="color"]:focus,
     }
 
     section.about .content {
+        width: 100%;
         margin: 60px 0 30px;
         margin-left: 0;
-    }
-
-    section.order {
-        height: 850px;
-        margin-top: -8%;
     }
 
     section.order .content .button-images {
         flex-direction: column-reverse;
         margin-top: 40px;
+    }
+
+    section.order .content p {
+        width: 80%;
     }
 
     section.order .content .button-images img.img1 {
@@ -341,22 +346,19 @@ input[type="color"]:focus,
 }
 
 @media only screen and (max-width: 640px) {
-    section.order {
-        height: 700px;
-    }
-
     section.order .content h1 {
         width: 80%;
-        font-size: 2.2em;
+        font-size: 2.3em;
     }
 
     section.order .content p {
-        width: 80%;
-        margin: 30px auto;
+        width: 90%;
+        margin-top: 30px;
     }
 
     section.order .content .button-images img.img1 {
         width: 260px;
+        margin-top: 10px;
     }
 
     section.products .text {
@@ -366,14 +368,17 @@ input[type="color"]:focus,
 
 @media only screen and (max-width: 504px) {
     section.about .content {
-        width: 80%;
-    }
-
-    section.products .cards {
-        width: 100%;
+        width: 95%;
     }
 
     section.products .card {
-        margin: 10px !important;
+        margin: 15px !important;
+    }
+}
+
+
+@media only screen and (max-width: 474px) {
+    section.products .cards {
+        width: 100%;
     }
 }
