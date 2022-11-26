@@ -3,7 +3,7 @@ import imgAyuda from "../assets/img/question.png";
 import imgFacebook from "../assets/img/facebook.png";
 import imgTwitter from "../assets/img/twitter.png";
 import imgInstagram from "../assets/img/instagram.png";
-import imgGitHub from "../assets/img/GitHub-Mark-64px.png";
+import imgGitHub from "../assets/img/github.png";
 import "../assets/stylesheets/Footer.css";
 
 function Footer() {

@@ -135,7 +135,7 @@ header.mobile-header a.btn-nav {
 header.mobile-header a.btn-modo-oscuro {
     position: absolute;
     left: 8%;
-    background: url('../img/GitHub-Mark-64px.png')transparent no-repeat;
+    background: url('../img/github.png')transparent no-repeat;
     background-size: cover;
     transition: all 300ms ease-out;
 }
