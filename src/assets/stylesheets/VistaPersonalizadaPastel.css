@@ -65,6 +65,9 @@
 }
 
 .container-cards .cards .card-title h3 {
+    margin-top: 13px;
+    color: #5F4A33;
+    text-align: center;
     font-size: 1.2em;
     font-weight: normal;
     transition: transform .8s ease;

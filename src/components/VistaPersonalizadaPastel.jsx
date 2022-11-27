@@ -1,8 +1,8 @@
-import "../assets/stylesheets/VistaPersonalizadaPastel.css";
 import panque from "../assets/icons/panque.svg";
 import cookie from "../assets/icons/galletas.svg";
 import cake from "../assets/icons/cake.svg";
 import blondie from "../assets/icons/blondie.svg";
+import "../assets/stylesheets/VistaPersonalizadaPastel.css";
 
 function VistaPersonalizadaPastel() {
   return (
