@@ -1,5 +1,5 @@
-import logo from "../assets/icons/logo1.svg";
-import logoChico from "../assets/img/logo-chico.png";
+import logo from "../assets/icons/logo.svg";
+import logoChico from "../assets/icons/logo-chico.svg";
 import imgPedidos from "../assets/img/archive.png";
 import imgAyuda from "../assets/img/question.png";
 import ButtonsAccess from "./ButtonsAccess";

@@ -29,7 +29,8 @@ header.mobile-header ul.links>a {
 
 header.mobile-header ul.links img {
     display: block;
-    margin: 12px auto 60px;
+    width: 60px;
+    margin: 20px auto 80px;
 }
 
 header.mobile-header ul.links li {
