@@ -71,7 +71,7 @@ section.order .content .button-images a.btn {
 section.order .content .button-images a.btn:hover,
 section.order .content .button-images a.btn:focus,
 section.order .content .button-images a.btn:active {
-    background-color: #352F29;
+    background: #352F29;
     transition: all 350ms ease-in;
 }
 
@@ -210,7 +210,7 @@ form#contactForm .btn-primary {
 form#contactForm .btn-primary:hover,
 form#contactForm .btn-primary:focus,
 form#contactForm .btn-primary:active {
-    background-color: #32281d;
+    background: #32281d;
     transition: all 350ms ease-in;
 }
 

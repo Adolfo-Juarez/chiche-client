@@ -1,7 +1,7 @@
 header.mobile-header {
     width: 100%;
     height: 86px;
-    background-color: #F3F0EC;
+    background: #F3F0EC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ header.mobile-header ul.links {
     z-index: 9999;
     top: 0;
     right: -100vw;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     transition: all 250ms ease-out;
     list-style: none;
 }
@@ -75,7 +75,7 @@ header.mobile-header ul.links .buttons a.btn {
     padding: 3% 0;
     margin: 0 auto;
     color: #5F4A33;
-    background-color: #F3F0EC;
+    background: #F3F0EC;
     border-radius: 0.4em;
     text-align: center;
     font-size: 0.8em;
@@ -88,7 +88,7 @@ header.mobile-header ul.links .buttons a.btn:hover,
 header.mobile-header ul.links .buttons a.btn:focus,
 header.mobile-header ul.links .buttons a.btn:active {
     color: #F3F0EC;
-    background-color: #352F29;
+    background: #352F29;
     transition: all 350ms ease-in;
 }
 
@@ -240,8 +240,8 @@ header {
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 35px;
-    background-color: #5f4a33;
+    padding: 9px 5px;
+    background: #5f4a33;
     text-decoration: none;
     font-size: 1em;
     color: #FFFFFF;
@@ -252,7 +252,7 @@ header {
 
 .FlexContainer div.login .btn:hover,
 .FlexContainer div.login .btn:focus {
-    background-color: #32281d;
+    background: #32281d;
     transition: all 350ms ease-in;
 }
 

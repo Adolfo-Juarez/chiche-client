@@ -52,7 +52,7 @@
     background-position: center;
     margin: 5px;
     align-content: center;
-    background-color: rgba(243, 240, 236, 0.50);
+    background: rgba(243, 240, 236, 0.50);
     align-items: center;
     z-index: 1;
 }

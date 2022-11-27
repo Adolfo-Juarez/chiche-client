@@ -40,7 +40,7 @@
   width: 500px;
   height: 550px;
   border-radius: 45px;
-  background-color: #24262bb9;
+  background: #24262bb9;
   font-family: 'Dosis', sans-serif;
   color: aliceblue;
   filter: drop-shadow(10px 10px 100px black);
@@ -96,7 +96,7 @@
 .btn-Submit {
   width: 260px;
   height: 50px;
-  background-color: aliceblue;
+  background: aliceblue;
   color: #4FA3A5;
   transition: all .7s;
   font-family: 'Staatliches';
@@ -107,6 +107,6 @@
 
 .btn-Submit:hover {
   transition: all .7s;
-  background-color: #4FA3A5;
+  background: #4FA3A5;
   color: aliceblue;
 }

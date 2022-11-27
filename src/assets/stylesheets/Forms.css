@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(5px);
-    background-color: rgba(66, 38, 38, 0.473);
+    background: rgba(66, 38, 38, 0.473);
 }
 
 .register-title {
@@ -30,7 +30,7 @@
 
 .register-btn {
     font-size: 16px;
-    background-color: #fff;
+    background: #fff;
     color: #181515;
     padding: 5px 6px;
     border: none;
@@ -40,6 +40,6 @@
 .register-btn:hover {
     cursor: pointer;
     transition: all 200ms;
-    background-color: #181515;
+    background: #181515;
     color: #fff
 }
