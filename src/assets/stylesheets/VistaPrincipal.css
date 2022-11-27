@@ -78,7 +78,7 @@ section.order .content .button-images a.btn:active {
 div.pintura {
     width: 100%;
     height: 245px;
-    background: url('../img/pintura.svg')transparent repeat-x;
+    background: url('../icons/pintura.svg')transparent repeat-x;
 }
 
 section.products {
