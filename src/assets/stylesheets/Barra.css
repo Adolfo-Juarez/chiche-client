@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+.barra {
+    width: 100%;
+    background: #F3F0EC;
+    border-top: 1px dashed #5F4A33;
+    border-bottom: 1px dashed #5F4A33;
+}
 
-.contenedor {
+.barra .contenedor {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 15px;
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
 }
 
-h2 {
+.barra .contenedor h2 {
     color: #5F4A33;
-    font-family: Libre Caslon Display;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: normal;
 }

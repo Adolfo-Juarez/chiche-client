@@ -5,15 +5,17 @@ import back from "../assets/icons/Back.svg";
 function Barra({ nextpage, previouspage, title }) {
   return (
     <>
-      <div className="contenedor">
-        <a href={previouspage}>
-          <img src={back} />
-        </a>
-        <h2>{`${title}:`}</h2>
-        <a href={nextpage}>
-          <img src={next} />
-        </a>
-      </div>
+      <nav className="barra">
+        <div className="contenedor">
+          <a href={previouspage}>
+            <img src={back} />
+          </a>
+          <h2>{`${title}:`}</h2>
+          <a href={nextpage}>
+            <img src={next} />
+          </a>
+        </div>
+      </nav>
     </>
   );
 }
