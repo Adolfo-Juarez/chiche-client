@@ -1,4 +1,4 @@
-import "../assets/stylesheets/VistaPastel3.css";
+import "../assets/stylesheets/VistaPastel.css";
 import { useState } from "react";
 import c1 from "../assets/icons/C1.svg";
 import c2 from "../assets/icons/C2.svg";

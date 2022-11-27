@@ -1,4 +1,4 @@
-import "../assets/stylesheets/VistaPastel2.css";
+import "../assets/stylesheets/VistaPastel.css";
 import mermelada from "../assets/icons/Cuadro1.svg";
 import cajeta from "../assets/icons/Cuadro2.svg";
 import betunCafe from "../assets/icons/Cuadro3.svg";
