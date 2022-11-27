@@ -164,12 +164,6 @@ header.mobile-header a.btn-nav:hover {
     transition: all 350ms ease-in;
 }
 
-header.mobile-header a.btn-nav:active {
-    background: url('../icons/nav.svg')transparent no-repeat center;
-    background-size: 25px;
-    transition: all 300ms ease-out;
-}
-
 header {
     display: none;
     height: 100px;
