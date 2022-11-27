@@ -58,27 +58,27 @@ function VistaPrincipal() {
           </div>
           <div className="cards">
             <div className="card">
-              <img className="imagePastel" src={cake} />
-              <div className="card-top">
-                <h2>Pasteles</h2>
+              <img src={cake} />
+              <div className="card-title">
+                <h3>Pasteles</h3>
               </div>
             </div>
             <div className="card">
-              <img className="imagePastel" src={panque} />
-              <div className="card-top">
-                <h2>Panques</h2>
+              <img src={panque} />
+              <div className="card-title">
+                <h3>Panques</h3>
               </div>
             </div>
             <div className="card">
-              <img className="imagePastel" src={blondie} />
-              <div className="card-top">
-                <h2>Blondies</h2>
+              <img src={blondie} />
+              <div className="card-title">
+                <h3>Blondies</h3>
               </div>
             </div>
             <div className="card">
-              <img className="imagePastel" src={cookie} />
-              <div className="card-top">
-                <h2>Galletas</h2>
+              <img src={cookie} />
+              <div className="card-title">
+                <h3>Galletas</h3>
               </div>
             </div>
           </div>
