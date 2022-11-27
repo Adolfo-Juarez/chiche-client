@@ -7,55 +7,54 @@ import blondie from "../assets/img/blondie.png";
 function VistaPersonalizadaPastel() {
   return (
     <>
-      <div className="texto">
-        <h2>
-          Disfruta de la <br /> variedad de <br /> productos
-        </h2>
-      </div>
-      <div className="container-cards" />
-      <div className="cards">
-        <div
-          className="card"
-          onClick={() => {
-            location.replace("/biscuit");
-          }}
-        >
-          <img className="imagePastel" src={cake} />
-          <div className="card-top">
-            <h2>Pasteles</h2>
-          </div>
+      <div className="container-cards">
+        <div className="texto">
+          <h2>Disfruta de la variedad de productos</h2>
         </div>
-        <div
-          className="card"
-          onClick={() => {
-            location.replace("/cupcake");
-          }}
-        >
-          <img className="imagePastel" src={panque} />
-          <div className="card-top">
-            <h2>Panques</h2>
+        <div className="cards">
+          <div
+            className="card"
+            onClick={() => {
+              location.replace("/biscuit");
+            }}
+          >
+            <img src={cake} />
+            <div className="card-title">
+              <h3>Pasteles</h3>
+            </div>
           </div>
-        </div>
-        <div
-          className="card"
-          onClick={() => {
-            location.replace("/blondie");
-          }}
-        >
-          <img className="imagePastel" src={blondie} />
-          <div className="card-top">
-            <h2>Blondies</h2>
+          <div
+            className="card"
+            onClick={() => {
+              location.replace("/cupcake");
+            }}
+          >
+            <img src={panque} />
+            <div className="card-title">
+              <h3>Panques</h3>
+            </div>
           </div>
-        </div>
-        <div
-          className="card"
-          onClick={() => {
-            location.replace("/cookie");
-          }}
-        >
-          <img className="imagePastel" src={cookie} />
-          <div className="card-top">
-            <h2>Galletas</h2>
+          <div
+            className="card"
+            onClick={() => {
+              location.replace("/blondie");
+            }}
+          >
+            <img src={blondie} />
+            <div className="card-title">
+              <h3>Blondies</h3>
+            </div>
+          </div>
+          <div
+            className="card"
+            onClick={() => {
+              location.replace("/cookie");
+            }}
+          >
+            <img src={cookie} />
+            <div className="card-title">
+              <h3>Galletas</h3>
+            </div>
           </div>
         </div>
       </div>

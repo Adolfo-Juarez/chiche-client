@@ -1,6 +1,6 @@
-import "../assets/stylesheets/Barra.css";
 import next from "../assets/icons/Next.svg";
 import back from "../assets/icons/Back.svg";
+import "../assets/stylesheets/Barra.css";
 
 function Barra({ nextpage, previouspage, title }) {
   return (
@@ -10,7 +10,7 @@ function Barra({ nextpage, previouspage, title }) {
           <a href={previouspage}>
             <img src={back} />
           </a>
-          <h2>{`${title}:`}</h2>
+          <h1>{`${title}:`}</h1>
           <a href={nextpage}>
             <img src={next} />
           </a>

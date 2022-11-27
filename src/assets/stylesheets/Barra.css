@@ -10,11 +10,11 @@
     align-items: center;
     justify-content: space-around;
     width: 95%;
-    height: 100px;
+    height: 80px;
     margin: 0 auto;
 }
 
-.barra .contenedor h2 {
+.barra .contenedor h1 {
     color: #5F4A33;
     text-align: center;
     font-size: 1.8em;
