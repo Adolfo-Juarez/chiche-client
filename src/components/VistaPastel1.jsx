@@ -1,9 +1,9 @@
 import "../assets/stylesheets/VistaPastel1.css";
 import cacao from "../assets/icons/cacao.svg";
 import vainilla from "../assets/icons/vainilla.svg";
-import funfetti from "../assets/icons/Funfetti.svg";
+import funfetti from "../assets/icons/funfetti.svg";
 import redVelvet from "../assets/icons/red-velvet.svg";
-import oreo from "../assets/icons/Oreo.svg";
+import oreo from "../assets/icons/oreo.svg";
 import cafe from "../assets/icons/granos-de-cafe.svg";
 import { useState } from "react";
 

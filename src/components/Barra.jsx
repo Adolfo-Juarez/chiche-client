@@ -1,5 +1,5 @@
-import next from "../assets/icons/Next.svg";
-import back from "../assets/icons/Back.svg";
+import next from "../assets/icons/next.svg";
+import back from "../assets/icons/back.svg";
 import "../assets/stylesheets/Barra.css";
 
 function Barra({ nextpage, previouspage, title }) {

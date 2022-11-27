@@ -5,7 +5,7 @@
     flex-direction: column;
     background: #FFFFFF url("../icons/pattern-cookies.svg") repeat center;
     background-size: 460px;
-    height: 460px;
+    border-bottom: 1px dashed #5F4A33;
 }
 
 .container-cards .texto {
@@ -20,7 +20,8 @@
 .container-cards .texto h2 {
     text-align: center;
     color: #5F4A33;
-    margin: 20px 0;
+    text-shadow: 2px 1px 3px rgba(150, 150, 150, 0.8);
+    margin-bottom: 20px;
     font-size: 2em;
 }
 
@@ -46,6 +47,7 @@
     -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.39);
     backdrop-filter: blur(8px);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .container-cards .cards .card img {

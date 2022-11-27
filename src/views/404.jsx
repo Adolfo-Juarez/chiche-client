@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import oDonn from "../assets/img/bitten-donnut.png";
+import oDonn from "../assets/icons/bitten-donnut.svg";
 import "../assets/stylesheets/404.css";
 
 function E404() {

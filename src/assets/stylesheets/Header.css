@@ -113,20 +113,66 @@ header.mobile-header ul.more-links li a {
     align-items: center;
 }
 
-header.mobile-header ul.more-links img {
-    display: inline-block;
-    width: 20px;
-    margin: 0 16px 0 0;
+header.mobile-header ul.more-links li a span.imgPedidos {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url('../icons/archive.svg')transparent no-repeat center;
+    background-size: 22px;
+    transition: all 300ms ease-out;
 }
 
-.rotate {
-    position: fixed !important;
-    transform: rotate(90deg);
+header.mobile-header ul.more-links li a span.imgPedidos:hover {
+    background: url('../icons/archive-hover.svg')transparent no-repeat center;
+    background-size: 22px;
+    transition: all 350ms ease-in;
 }
 
-.active {
-    transform: translateX(-100vw);
-    transition: all 200ms ease-in;
+header.mobile-header ul.more-links li a span.imgAyuda {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url('../icons/question.svg')transparent no-repeat center;
+    background-size: 22px;
+    transition: all 300ms ease-out;
+}
+
+header.mobile-header ul.more-links li a span.imgAyuda:hover {
+    background: url('../icons/question-hover.svg')transparent no-repeat center;
+    background-size: 25px;
+    transition: all 350ms ease-in;
+}
+
+header.mobile-header ul.more-links li a span {
+    display: block;
+    color: #5F4A33;
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: 10px;
+    transition: all 350ms ease-out;
+}
+
+header.mobile-header ul.more-links li a:hover span,
+header.mobile-header ul.more-links li a:focus span,
+header.mobile-header ul.more-links li a:active span {
+    color: #A8947E;
+    transition: all 350ms ease-in;
+}
+
+header.mobile-header ul.more-links li a:hover span.imgAyuda,
+header.mobile-header ul.more-links li a:focus span.imgAyuda,
+header.mobile-header ul.more-links li a:active span.imgAyuda {
+    background: url('../icons/question-hover.svg')transparent no-repeat center;
+    background-size: 22px;
+    transition: all 350ms ease-in;
+}
+
+header.mobile-header ul.more-links li a:hover span.imgPedidos,
+header.mobile-header ul.more-links li a:focus span.imgPedidos,
+header.mobile-header ul.more-links li a:active span.imgPedidos {
+    background: url('../icons/archive-hover.svg')transparent no-repeat center;
+    background-size: 22px;
+    transition: all 350ms ease-in;
 }
 
 header.mobile-header .logo {
@@ -137,15 +183,15 @@ header.mobile-header a.btn-modo-oscuro,
 header.mobile-header a.btn-nav {
     display: block;
     text-decoration: none;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
 }
 
 header.mobile-header a.btn-modo-oscuro {
     position: absolute;
     left: 8%;
-    background: url('../img/github.png')transparent no-repeat;
-    background-size: cover;
+    background: url('../icons/github.svg')transparent no-repeat center;
+    background-size: 30px;
     transition: all 300ms ease-out;
 }
 
@@ -164,13 +210,23 @@ header.mobile-header a.btn-nav:hover {
     transition: all 350ms ease-in;
 }
 
+.rotate {
+    position: fixed !important;
+    transform: rotate(90deg);
+}
+
+.active {
+    transform: translateX(-100vw);
+    transition: all 200ms ease-in;
+}
+
 header {
     display: none;
     height: 100px;
     background: #F3F0EC;
 }
 
-.FlexContainer {
+header section.flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,63 +236,63 @@ header {
     flex-direction: row;
 }
 
-.FlexContainer div {
+header section.flex-container div {
     height: 60px;
     margin: 0 5px;
     margin-top: 20px;
 }
 
-.FlexContainer div.flex-logo {
+header section.flex-container div.flex-logo {
     width: 15%;
     display: flex;
     justify-content: center;
 }
 
-.FlexContainer div.nav {
+header section.flex-container div.nav {
     width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.FlexContainer div.nav ul {
+header section.flex-container div.nav ul {
     list-style: none;
 }
 
-.FlexContainer div.nav ul li {
+header section.flex-container div.nav ul li {
     display: inline-block;
     font-size: 1.3em;
 }
 
-.FlexContainer div.nav ul li a {
+header section.flex-container div.nav ul li a {
     color: #5f4a33;
     text-decoration: none;
     transition: all 350ms ease-out;
 }
 
-.FlexContainer div.nav ul li a:hover,
-.FlexContainer div.nav ul li a:focus {
-    color: #32281d;
+header section.flex-container div.nav ul li a:hover,
+header section.flex-container div.nav ul li a:focus {
+    color: #A8947E;
     text-decoration: none;
     transition: all 350ms ease-in;
 }
 
-.FlexContainer div.nav ul li:first-child {
+header section.flex-container div.nav ul li:first-child {
     margin-right: 100px;
 }
 
-.FlexContainer div.nav ul li:last-child {
+header section.flex-container div.nav ul li:last-child {
     margin-left: 100px;
 }
 
-.FlexContainer div.login {
+header section.flex-container div.login {
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.FlexContainer div.login .btn {
+header section.flex-container div.login .btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,59 +307,59 @@ header {
     transition: all 350ms ease-out;
 }
 
-.FlexContainer div.login .btn:hover,
-.FlexContainer div.login .btn:focus {
+header section.flex-container div.login .btn:hover,
+header section.flex-container div.login .btn:focus {
     background: #32281d;
     transition: all 350ms ease-in;
 }
 
-.FlexContainer div img.logo {
+header section.flex-container div img.logo {
     width: 140px;
 }
 
 @media only screen and (max-width: 1050px) {
-    .FlexContainer div.nav ul li:first-child {
+    header section.flex-container div.nav ul li:first-child {
         margin-right: 50px;
     }
 
-    .FlexContainer div.nav ul li:last-child {
+    header section.flex-container div.nav ul li:last-child {
         margin-left: 50px;
     }
 
-    .FlexContainer div.login .btn {
+    header section.flex-container div.login .btn {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 825px) {
-    .FlexContainer div.flex-logo {
+    header section.flex-container div.flex-logo {
         width: 15%;
     }
 
-    .FlexContainer div.nav {
+    header section.flex-container div.nav {
         width: 50%;
     }
 
-    .FlexContainer div.login {
+    header section.flex-container div.login {
         width: 15%;
     }
 
-    .FlexContainer div.nav ul li:first-child {
+    header section.flex-container div.nav ul li:first-child {
         margin-right: 25px;
     }
 
-    .FlexContainer div.nav ul li:last-child {
+    header section.flex-container div.nav ul li:last-child {
         margin-left: 25px;
     }
 
-    .FlexContainer div.login .btn {
+    header section.flex-container div.login .btn {
         width: 80%;
         height: 45px;
     }
 }
 
 @media only screen and (max-width: 752px) {
-    .FlexContainer div.flex-logo .logo {
+    header section.flex-container div.flex-logo .logo {
         width: 120px;
     }
 }

@@ -5,12 +5,25 @@ footer {
     z-index: 999;
 }
 
-footer h1 {
-    font-size: 1.2em;
+
+footer a {
+    text-decoration: none;
+}
+
+footer a h1 {
+    font-size: 1.3em;
     color: #5F4A33;
     font-weight: 500;
     text-align: center;
     margin-top: 30px;
+    transition: all 300ms ease-out;
+}
+
+footer a h1:hover,
+footer a h1:active,
+footer a h1:focus {
+    color: #A8947E;
+    transition: all 350ms ease-in;
 }
 
 footer .social {
@@ -24,6 +37,11 @@ footer .social {
 footer .social img {
     width: 25px;
     margin: 0 20px;
+    transition: transform .8s ease;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
 }
 
 footer span {
@@ -57,15 +75,41 @@ footer ul.more-links li a {
     text-decoration: none;
 }
 
-footer ul.more-links li a img {
+footer ul.more-links li a span.imgPedidos {
+    display: block;
     width: 25px;
+    height: 25px;
+    background: url('../icons/archive.svg')transparent no-repeat center;
+    background-size: 25px;
+    transition: all 300ms ease-out;
+}
+
+footer ul.more-links li a span.imgPedidos:hover {
+    background: url('../icons/archive-hover.svg')transparent no-repeat center;
+    background-size: 25px;
+    transition: all 350ms ease-in;
+}
+
+footer ul.more-links li a span.imgAyuda {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../icons/question.svg')transparent no-repeat center;
+    background-size: 25px;
+    transition: all 300ms ease-out;
+}
+
+footer ul.more-links li a span.imgAyuda:hover {
+    background: url('../icons/question-hover.svg')transparent no-repeat center;
+    background-size: 25px;
+    transition: all 350ms ease-in;
 }
 
 footer ul.more-links li a span {
     display: block;
     color: #5F4A33;
     font-size: 1em;
-    margin-top: 15px;
+    margin-top: 0;
     transition: all 350ms ease-out;
 }
 
@@ -73,5 +117,21 @@ footer ul.more-links li a:hover span,
 footer ul.more-links li a:focus span,
 footer ul.more-links li a:active span {
     color: #A8947E;
+    transition: all 350ms ease-in;
+}
+
+footer ul.more-links li a:hover span.imgAyuda,
+footer ul.more-links li a:focus span.imgAyuda,
+footer ul.more-links li a:active span.imgAyuda {
+    background: url('../icons/question-hover.svg')transparent no-repeat center;
+    background-size: 25px;
+    transition: all 350ms ease-in;
+}
+
+footer ul.more-links li a:hover span.imgPedidos,
+footer ul.more-links li a:focus span.imgPedidos,
+footer ul.more-links li a:active span.imgPedidos {
+    background: url('../icons/archive-hover.svg')transparent no-repeat center;
+    background-size: 25px;
     transition: all 350ms ease-in;
 }
