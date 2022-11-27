@@ -3,7 +3,6 @@ import logoChico from "../assets/img/logo-chico.png";
 import imgPedidos from "../assets/img/archive.png";
 import imgAyuda from "../assets/img/question.png";
 import ButtonsAccess from "./ButtonsAccess";
-import { isAuthenticated } from "../resources/Auth";
 import "../assets/stylesheets/Header.css";
 
 function Header() {
@@ -71,7 +70,9 @@ function Header() {
           <p>
             Se parte de nosotros para obtener los mejores productos y
             descuentos.
-            <b>Más información</b>
+            <br></br>
+            <br></br>
+            <b>Más información...</b>
           </p>
           <div className="buttons">
             <ButtonsAccess />

@@ -76,6 +76,7 @@ header.mobile-header ul.links .buttons a.btn {
     margin: 0 auto;
     color: #5F4A33;
     background-color: #F3F0EC;
+    border-radius: 0.4em;
     text-align: center;
     font-size: 0.8em;
     font-weight: 600;
@@ -105,13 +106,20 @@ header.mobile-header ul.more-links li {
     margin-bottom: 16px;
 }
 
+header.mobile-header ul.more-links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header.mobile-header ul.more-links img {
     display: inline-block;
+    width: 20px;
     margin: 0 16px 0 0;
 }
 
 .rotate {
-    position: fixed;
+    position: fixed !important;
     transform: rotate(90deg);
 }
 
@@ -196,7 +204,7 @@ header {
 
 .FlexContainer div.nav ul li {
     display: inline-block;
-    text-transform: uppercase;
+    font-size: 1.3em;
 }
 
 .FlexContainer div.nav ul li a {
@@ -235,8 +243,7 @@ header {
     height: 35px;
     background-color: #5f4a33;
     text-decoration: none;
-    font-size: 0.9em;
-    text-transform: uppercase;
+    font-size: 1em;
     color: #FFFFFF;
     text-align: center;
     border-radius: 0.4em;

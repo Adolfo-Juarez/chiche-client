@@ -57,6 +57,10 @@ footer ul.more-links li a {
     text-decoration: none;
 }
 
+footer ul.more-links li a img {
+    width: 25px;
+}
+
 footer ul.more-links li a span {
     display: block;
     color: #5F4A33;
