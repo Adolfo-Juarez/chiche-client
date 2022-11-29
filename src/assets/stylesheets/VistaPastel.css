@@ -49,12 +49,17 @@ main.bizcocho .cuadros .cuadro img {
     transition: transform .8s ease;
 }
 
+main.bizcocho .cuadros .cuadro img.small {
+    width: 35px;
+}
+
 main.bizcocho .cuadros .cuadro:hover img {
     transform: scale(1.1);
 }
 
 main.bizcocho .cuadros .cuadro h3 {
     margin-top: 13px;
+    text-align: center;
     color: #5F4A33;
     font-size: 1.1em;
     font-weight: normal;
@@ -62,6 +67,20 @@ main.bizcocho .cuadros .cuadro h3 {
 }
 
 main.bizcocho .cuadros .cuadro:hover h3 {
+    transform: scale(1.1);
+}
+
+main.bizcocho .cuadros .cuadro h4 {
+    width: 80%;
+    margin-top: 13px;
+    text-align: center;
+    color: #5F4A33;
+    font-size: 0.9em;
+    font-weight: normal;
+    transition: transform .8s ease;
+}
+
+main.bizcocho .cuadros .cuadro:hover h4 {
     transform: scale(1.1);
 }
 
@@ -90,6 +109,10 @@ main.bizcocho .cuadros .cuadro:hover h3 {
         width: 38px;
     }
 
+    main.bizcocho .cuadros .cuadro img.small+h4 {
+        margin-top: 5px;
+    }
+
     main.bizcocho .cuadros .cuadro h3 {
         font-size: 1em;
     }
@@ -109,6 +132,14 @@ main.bizcocho .cuadros .cuadro:hover h3 {
 
     main.bizcocho .cuadros .cuadro img {
         width: 58px;
+    }
+
+    main.bizcocho .cuadros .cuadro img.small {
+        width: 40px;
+    }
+
+    main.bizcocho .cuadros .cuadro img.small+h4 {
+        margin-top: 13px;
     }
 
     main.bizcocho .cuadros .cuadro h3 {
