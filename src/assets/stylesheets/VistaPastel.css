@@ -15,14 +15,14 @@ main.bizcocho .sub {
     justify-content: center;
     width: 100%;
     margin-bottom: 25px;
-    padding: 5px 0;
+    padding: 6px 0;
     background-color: #FFFFFF;
     border-top: 1px dashed #5F4A33;
     border-bottom: 1px dashed #5F4A33;
 }
 
 main.bizcocho .sub:first-child {
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 main.bizcocho .sub h2 {
