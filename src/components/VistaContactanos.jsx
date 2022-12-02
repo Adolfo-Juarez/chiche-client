@@ -3,12 +3,6 @@ import "../assets/stylesheets/VistaPrincipal.css";
 function VistaPrincipal() {
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-        crossorigin="anonymous"
-      />
       <main className="home">
         <section className="contactanos">
           <div className="content">
@@ -18,17 +12,10 @@ function VistaPrincipal() {
               deliciosos!
             </p>
             <form id="contactForm">
-              <div
-                className="alert alert-success"
-                role="alert"
-                style={{ display: "none" }}
-              >
-                Tu mensaje ha sido enviado
-              </div>
               <div className="form-group">
-                <label for="name">Nombre</label>
+                <label htmlFor="name">Nombre</label>
                 <input
-                  className="form-control"
+                  className="form-text"
                   type="text"
                   name="name"
                   id="name"
@@ -36,9 +23,9 @@ function VistaPrincipal() {
                 ></input>
               </div>
               <div className="form-group">
-                <label for="phone">Télefono</label>
+                <label htmlFor="phone">Télefono</label>
                 <input
-                  className="form-control"
+                  className="form-text"
                   type="number"
                   name="phone"
                   id="phone"
@@ -47,9 +34,9 @@ function VistaPrincipal() {
                 ></input>
               </div>
               <div className="form-group">
-                <label for="email">Correo</label>
+                <label htmlFor="email">Correo</label>
                 <input
-                  className="form-control"
+                  className="form-text"
                   type="email"
                   name="email"
                   id="email"
@@ -57,21 +44,17 @@ function VistaPrincipal() {
                 ></input>
               </div>
               <div className="form-group">
-                <label for="message">Mensaje</label>
+                <label htmlFor="message">Mensaje</label>
                 <textarea
-                  className="form-control"
+                  className="form-textarea"
                   name="message"
                   id="message"
                 ></textarea>
               </div>
               <div className="form-group">
-                <div className="form-row">
-                  <div className="col-md-12 button text-center">
-                    <button className="btn btn-primary btn-block" type="submit">
-                      Contactame<br></br>
-                    </button>
-                  </div>
-                </div>
+                <button className="btn btn-primary btn-block" type="submit">
+                  Contactame
+                </button>
               </div>
             </form>
             <p>Envíanos un e-mail y en breve nos comunicaremos contigo.</p>
