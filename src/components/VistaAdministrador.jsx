@@ -61,6 +61,8 @@ return (
                 <th>Biscuit</th>
                 <th>Filling</th>
                 <th>Coverage</th>
+                <th>Design</th>
+                <th>Shape</th>
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -76,8 +78,10 @@ return (
                       <td>{cakes.biscuit}</td>
                       <td>{cakes.filling}</td>
                       <td>{cakes.coverage}</td>
+                      <td>{cakes.design}</td>
+                      <td>{cakes.shape}</td>
                       <td className='botones'>
-                        <button type="button" className="btn btn-danger" onClick={()=>borrar(cakes.id)}>Eliminar</button>
+                        <button type="button" className="btn btn-danger" onClick={()=>borrar(cakes.id)}>Finalizar</button>
                       </td>
                     </tr>
                   </>
