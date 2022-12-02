@@ -223,78 +223,83 @@ section.contactanos .content p {
     text-align: center;
 }
 
-form#contactForm {
+section.contactanos .content form#contactForm {
     width: 650px;
     margin: 40px auto;
 }
 
-form#contactForm .form-control {
-    margin-bottom: 20px;
+section.contactanos .content form#contactForm .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
-form#contactForm textarea {
-    min-height: 60px;
-    max-height: 350px;
+section.contactanos .content form#contactForm .form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: normal;
 }
 
-form#contactForm .btn-primary {
-    margin-top: 15px;
-    background: #5f4a33;
+section.contactanos .content form#contactForm .form-group .form-text {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    background: #FFFFFF;
+    outline: 0;
     border: none;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0 1pt #A8947E;
     transition: all 300ms ease-out;
 }
 
-form#contactForm .btn-primary:hover,
-form#contactForm .btn-primary:focus,
-form#contactForm .btn-primary:active {
-    background: #32281d;
+section.contactanos .content form#contactForm .form-group .form-textarea {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    max-height: 350px;
+    padding: 10px 12px;
+    background: #FFFFFF;
+    outline: 0;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0 1pt #A8947E;
+    transition: all 300ms ease-out;
+}
+
+section.contactanos .content form#contactForm .form-group .form-text:hover,
+section.contactanos .content form#contactForm .form-group .form-text:focus,
+section.contactanos .content form#contactForm .form-group .form-textarea:hover,
+section.contactanos .content form#contactForm .form-group .form-textarea:focus {
+    outline: 0;
+    border: none;
+    box-shadow: 0 0 0 3pt #A8947E !important;
     transition: all 350ms ease-in;
 }
 
-/*  Estos estilos de Bootstrap se aplican unicamente en la sección Contáctanos  */
-ol,
-ul {
-    padding-left: 0 !important;
-}
-
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
+section.contactanos form#contactForm .btn-primary {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #5f4a33;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    outline: 0;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
     transition: all 300ms ease-out;
 }
 
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
+section.contactanos form#contactForm .btn-primary:hover,
+section.contactanos form#contactForm .btn-primary:focus,
+section.contactanos form#contactForm .btn-primary:active {
+    background: #32281d;
+    outline: 0;
     border: none;
-    box-shadow: 0 0 0 3pt #A8947E !important;
-    outline: 0 none;
     transition: all 350ms ease-in;
 }
 
@@ -376,8 +381,8 @@ input[type="color"]:focus,
         display: none;
     }
 
-    form#contactForm {
-        width: 85%;
+    section.contactanos .content form#contactForm {
+        width: 83%;
         margin: 40px auto;
     }
 }
