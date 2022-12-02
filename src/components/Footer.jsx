@@ -1,26 +1,26 @@
-import imgPedidos from "../assets/img/archive.png";
-import imgAyuda from "../assets/img/question.png";
-import imgFacebook from "../assets/img/facebook.png";
-import imgTwitter from "../assets/img/twitter.png";
-import imgInstagram from "../assets/img/instagram.png";
-import imgGitHub from "../assets/img/github.png";
+import imgFacebook from "../assets/icons/facebook.svg";
+import imgTwitter from "../assets/icons/twitter.svg";
+import imgInstagram from "../assets/icons/instagram.svg";
+import imgGitHub from "../assets/icons/github.svg";
 import "../assets/stylesheets/Footer.css";
 
 function Footer() {
   return (
     <>
       <footer>
-        <h1>Envíanos tus comentarios</h1>
+        <a href="/contact">
+          <h1>Envíanos tus comentarios</h1>
+        </a>
         <ul className="more-links">
           <li>
             <a href="/order">
-              <img src={imgPedidos} alt="Handbag" />
+              <span className="imgPedidos"></span>
               <span>Pedidos</span>
             </a>
           </li>
           <li>
             <a href="/help">
-              <img src={imgAyuda} alt="Handbag" />
+              <span className="imgAyuda"></span>
               <span>Ayuda</span>
             </a>
           </li>

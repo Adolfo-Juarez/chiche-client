@@ -1,7 +1,7 @@
 import logo from "../assets/icons/logo.svg";
 import logoChico from "../assets/icons/logo-chico.svg";
-import imgPedidos from "../assets/img/archive.png";
-import imgAyuda from "../assets/img/question.png";
+import imgPedidos from "../assets/icons/archive.svg";
+import imgAyuda from "../assets/icons/question.svg";
 import ButtonsAccess from "./ButtonsAccess";
 import "../assets/stylesheets/Header.css";
 
@@ -17,7 +17,7 @@ function Header() {
   return (
     <>
       <header>
-        <section className="FlexContainer">
+        <section className="flex-container">
           <div className="flex-logo">
             <a href="/">
               <img className="logo" src={logo} alt="Logo header" />
@@ -80,14 +80,14 @@ function Header() {
           <ul className="more-links">
             <li>
               <a href="/order">
-                <img src={imgPedidos} alt="Handbag" />
-                Pedidos
+                <span className="imgPedidos"></span>
+                <span>Pedidos</span>
               </a>
             </li>
             <li>
               <a href="/help">
-                <img src={imgAyuda} alt="Handbag" />
-                Ayuda
+                <span className="imgAyuda"></span>
+                <span>Ayuda</span>
               </a>
             </li>
           </ul>

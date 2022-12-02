@@ -1,0 +1,181 @@
+main.bizcocho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: #FFFFFF url("../icons/pattern-cookies.svg") repeat center;
+    background-size: 460px;
+    border-bottom: 1px dashed #5F4A33;
+}
+
+main.bizcocho .sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 5px 0;
+    background-color: #FFFFFF;
+    border-top: 1px dashed #5F4A33;
+    border-bottom: 1px dashed #5F4A33;
+}
+
+main.bizcocho .sub:first-child {
+    margin-top: 25px;
+}
+
+main.bizcocho .sub h2 {
+    text-align: center;
+    color: #5F4A33;
+    text-shadow: 2px 1px 3px rgba(150, 150, 150, 0.4);
+    font-size: 1.8em;
+}
+
+main.bizcocho .cuadros {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+main.bizcocho .cuadros.small {
+    width: 50%;
+}
+
+main.bizcocho .cuadros:first-child {
+    margin-top: 40px;
+}
+
+main.bizcocho .cuadros:last-child {
+    margin-bottom: 40px;
+}
+
+main.bizcocho .cuadros .cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 110px;
+    height: 110px;
+    margin: 20px;
+    background: #f3f0ec8a;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 300ms ease-out;
+}
+
+main.bizcocho .cuadros .cuadro img {
+    width: 45px;
+    transition: transform .8s ease;
+}
+
+main.bizcocho .cuadros .cuadro img.small {
+    width: 35px;
+}
+
+main.bizcocho .cuadros .cuadro:hover img {
+    transform: scale(1.1);
+}
+
+main.bizcocho .cuadros .cuadro h3 {
+    margin-top: 13px;
+    text-align: center;
+    color: #5F4A33;
+    font-size: 1.1em;
+    font-weight: normal;
+    transition: transform .8s ease;
+}
+
+main.bizcocho .cuadros .cuadro:hover h3 {
+    transform: scale(1.1);
+}
+
+main.bizcocho .cuadros .cuadro h4 {
+    width: 80%;
+    margin-top: 13px;
+    text-align: center;
+    color: #5F4A33;
+    font-size: 0.9em;
+    font-weight: normal;
+    transition: transform .8s ease;
+}
+
+main.bizcocho .cuadros .cuadro:hover h4 {
+    transform: scale(1.1);
+}
+
+.selected {
+    text-shadow: #FFD8A4 1px 1px 8px;
+}
+
+.unselected {
+    background: #d1d1d18b !important;
+    backdrop-filter: blur(8px);
+    transition: background 350ms ease-in;
+}
+
+@media only screen and (max-width: 794px) {
+    main.bizcocho .cuadros.small {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    main.bizcocho .cuadros {
+        width: 90%;
+    }
+
+    main.bizcocho .cuadros .cuadro {
+        width: 95px;
+        height: 95px;
+        margin: 0;
+    }
+
+    main.bizcocho .cuadros .cuadro img {
+        width: 38px;
+    }
+
+    main.bizcocho .cuadros .cuadro img.small+h4 {
+        margin-top: 5px;
+    }
+
+    main.bizcocho .cuadros .cuadro h3 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    main.bizcocho .cuadros {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    main.bizcocho .cuadros .cuadro {
+        width: 140px;
+        height: 140px;
+        margin: 20px;
+    }
+
+    main.bizcocho .cuadros .cuadro img {
+        width: 58px;
+    }
+
+    main.bizcocho .cuadros .cuadro img.small {
+        width: 40px;
+    }
+
+    main.bizcocho .cuadros .cuadro img.small+h4 {
+        margin-top: 13px;
+    }
+
+    main.bizcocho .cuadros .cuadro h3 {
+        font-size: 1.3em;
+    }
+}
