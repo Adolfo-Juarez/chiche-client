@@ -8,6 +8,7 @@ import ChooseDetails from "./views/OrderPastel3";
 import Login from "./views/Login";
 import Contactanos from "./views/Contactanos";
 import "./assets/stylesheets/index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "./views/SignUp";
@@ -15,22 +16,29 @@ import E404 from "./views/404";
 import Help from "./views/Ayuda";
 import Order from "./views/Order";
 
+import Admin from "./views/Administrador"
+/* import IngredientsProvider from "./resources/IngredientsProvider"; */
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/choose" element={<Choose />} />
-        <Route path="/biscuit" element={<ChooseBiscuit />} />
-        <Route path="/filling" element={<ChooseFilling />} />
-        <Route path="/details" element={<ChooseDetails />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<SignUp />} />
-        <Route path="/contact" element={<Contactanos />} />
-        <Route path="/help" element={<Help/>} />
-        <Route path="/order" element={<Order/>}/>
-        <Route path="/*" element={<E404/>}/>
-      </Routes>
+      {/* <IngredientsProvider> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/choose" element={<Choose />} />
+          <Route path="/biscuit" element={<ChooseBiscuit />} />
+          <Route path="/filling" element={<ChooseFilling />} />
+          <Route path="/details" element={<ChooseDetails />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<SignUp />} />
+          <Route path="/contact" element={<Contactanos />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/*" element={<E404 />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+      {/* </IngredientsProvider> */}
     </BrowserRouter>
   </React.StrictMode>
 );
