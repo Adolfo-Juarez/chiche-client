@@ -1,128 +1,145 @@
 header.mobile-header {
-    width: 100%;
-    height: 86px;
-    background: #F3F0EC;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100%;
+    height: 86px;
+    background: #F3F0EC;
 }
 
-header.mobile-header ul.links {
+header.mobile-header ul.mobile-menu {
     position: fixed;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
-    z-index: 9999;
     top: 0;
     right: -100vw;
     background: #FFFFFF;
+    list-style: none;
+    z-index: 9999;
     transition: all 250ms ease-out;
+}
+
+header.mobile-header ul.mobile-menu>a.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.mobile-header ul.mobile-menu>a.logo img {
+    width: 60px;
+}
+
+header.mobile-header ul.mobile-menu ul.nav {
+    width: 75%;
     list-style: none;
 }
 
-header.mobile-header ul.links>a {
-    display: block;
-    width: 80px;
-    margin: 0 auto;
-}
-
-header.mobile-header ul.links img {
-    display: block;
-    width: 60px;
-    margin: 20px auto 80px;
-}
-
-header.mobile-header ul.links li {
-    font-weight: 500;
-    font-size: 1.7em;
-    text-align: center;
+header.mobile-header ul.mobile-menu ul.nav li {
     margin-bottom: 20px;
+    font-size: 1.7em;
+    font-weight: 500;
+    text-align: center;
 }
 
-header.mobile-header ul.links li a {
+header.mobile-header ul.mobile-menu ul.nav li a {
     color: #5F4A33;
     text-decoration: none;
     transition: all 300ms ease-out;
 }
 
-header.mobile-header ul.links li a:hover,
-header.mobile-header ul.links li a:focus,
-header.mobile-header ul.links li a:active {
+header.mobile-header ul.mobile-menu ul.nav li a:hover,
+header.mobile-header ul.mobile-menu ul.nav li a:focus,
+header.mobile-header ul.mobile-menu ul.nav li a:active {
     color: #A8947E;
     transition: all 350ms ease-in;
 }
 
-header.mobile-header ul.links p {
+header.mobile-header ul.mobile-menu ul.nav p.description {
     display: block;
-    font-size: 1.1em;
+    width: 80%;
+    margin: 30px auto 40px;
     color: #5F4A33;
-    width: 220px;
-    margin: 30px auto 0;
+    font-size: 1.1em;
     text-align: center;
 }
 
-header.mobile-header ul.links .buttons {
+header.mobile-header ul.mobile-menu ul.nav .buttons {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: center;
-    width: 250px;
-    margin: 20px auto 0;
+    width: 100%;
 }
 
-header.mobile-header ul.links .buttons a.btn {
+header.mobile-header ul.mobile-menu ul.nav .buttons a.btn {
     display: block;
-    width: 45%;
-    padding: 3% 0;
-    margin: 0 auto;
-    color: #5F4A33;
+    width: 117px;
+    padding: 8px 0;
     background: #F3F0EC;
     border-radius: 0.4em;
-    text-align: center;
+    color: #5F4A33;
     font-size: 0.8em;
     font-weight: 600;
+    text-align: center;
     text-decoration: none;
     transition: all 300ms ease-out;
 }
 
-header.mobile-header ul.links .buttons a.btn:hover,
-header.mobile-header ul.links .buttons a.btn:focus,
-header.mobile-header ul.links .buttons a.btn:active {
+header.mobile-header ul.mobile-menu ul.nav .buttons a.btn:hover,
+header.mobile-header ul.mobile-menu ul.nav .buttons a.btn:focus,
+header.mobile-header ul.mobile-menu ul.nav .buttons a.btn:active {
     color: #F3F0EC;
     background: #352F29;
     transition: all 350ms ease-in;
 }
 
 header.mobile-header ul.more-links {
-    font-size: 0.8em;
-    font-weight: 600;
-    margin-top: 70px;
-    list-style: none !important;
+    list-style: none;
 }
 
-header.mobile-header ul.more-links li {
-    font-weight: 500;
-    font-size: 1.4em;
-    text-align: center;
-    margin-bottom: 16px;
+header.mobile-header ul.more-links li:first-child {
+    margin-bottom: 12px;
 }
 
 header.mobile-header ul.more-links li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+header.mobile-header ul.more-links li a span {
+    display: block;
+    color: #5F4A33;
+    font-size: 1.2em;
+    transition: all 350ms ease-out;
+}
+
+header.mobile-header ul.more-links li a:hover span,
+header.mobile-header ul.more-links li a:focus span,
+header.mobile-header ul.more-links li a:active span {
+    color: #A8947E;
+    transition: all 350ms ease-in;
 }
 
 header.mobile-header ul.more-links li a span.imgPedidos {
     display: block;
     width: 22px;
     height: 22px;
+    margin-right: 12px;
     background: url('../icons/archive.svg')transparent no-repeat center;
     background-size: 22px;
     transition: all 300ms ease-out;
 }
 
-header.mobile-header ul.more-links li a span.imgPedidos:hover {
+header.mobile-header ul.more-links li a span.imgPedidos:hover,
+header.mobile-header ul.more-links li a span.imgPedidos:focus,
+header.mobile-header ul.more-links li a span.imgPedidos:active {
     background: url('../icons/archive-hover.svg')transparent no-repeat center;
     background-size: 22px;
     transition: all 350ms ease-in;
@@ -132,30 +149,17 @@ header.mobile-header ul.more-links li a span.imgAyuda {
     display: block;
     width: 22px;
     height: 22px;
+    margin-right: 12px;
     background: url('../icons/question.svg')transparent no-repeat center;
     background-size: 22px;
     transition: all 300ms ease-out;
 }
 
-header.mobile-header ul.more-links li a span.imgAyuda:hover {
+header.mobile-header ul.more-links li a span.imgAyuda:hover,
+header.mobile-header ul.more-links li a span.imgAyuda:focus,
+header.mobile-header ul.more-links li a span.imgAyuda:active {
     background: url('../icons/question-hover.svg')transparent no-repeat center;
     background-size: 25px;
-    transition: all 350ms ease-in;
-}
-
-header.mobile-header ul.more-links li a span {
-    display: block;
-    color: #5F4A33;
-    font-size: 1em;
-    margin-top: 0;
-    margin-left: 10px;
-    transition: all 350ms ease-out;
-}
-
-header.mobile-header ul.more-links li a:hover span,
-header.mobile-header ul.more-links li a:focus span,
-header.mobile-header ul.more-links li a:active span {
-    color: #A8947E;
     transition: all 350ms ease-in;
 }
 
