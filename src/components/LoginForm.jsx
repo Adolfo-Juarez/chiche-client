@@ -30,10 +30,9 @@ function LoginForm() {
 
     return (
         <form className="register-register" onSubmit={login}>
-            <h2 className="register-title">Ingresa a tu cuenta</h2>
-
+            <h2 className="register-title">Iniciar sesión</h2>
             <label className="labels-register" htmlFor="email">
-                Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Nombre de usuario
             </label>
             <input
                 type="text"
@@ -55,6 +54,23 @@ function LoginForm() {
             />
 
             <input type="submit" className="register-btn" value="Ingresar" />
+
+            <p>¿No tienes una cuenta?</p>&nbsp;
+          <a href="" className="a-links"> <p>¡Haz click aquí!</p> </a> 
+
+            <button type="button" class="button">
+		<span class="button__text">Continuar con Google&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<span class="button__icon">
+    <ion-icon name="logo-google"></ion-icon>
+		</span>
+	</button>
+
+            <button type="button" class="button">
+		<span class="button__text">Continuar con Facebook</span>
+		<span class="button__icon">
+    <ion-icon name="logo-facebook"></ion-icon>
+		</span>
+	</button>
         </form>
     );
 }

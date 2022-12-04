@@ -4,42 +4,131 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(5px);
-    background: rgba(66, 38, 38, 0.473);
+    background-color: #fff;
+    width: 45%;
+    border-radius: 30px;
+}
+.display-flex-official{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F3F0EC;
 }
 
 .register-title {
     font-size: 35px;
+    margin-top: -5rem;
     margin-bottom: 30px;
-    color: #FFF;
+    color: #352F29;
+    font-family: 'Inter', sans-serif;
 }
 
 .labels-register {
-    margin-left: -115px;
-    color: #f3f0f3;
+    margin-left: -225px;
+    color: #352F29;
     margin-top: 12px;
     align-self: center;
+    font-size: 20px;
 }
 
 .input-register {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     border: none;
-    font-size: 19px;
+    outline: none;
+    font-size: 20px;
     padding: 3px 5px;
+    width: 25rem;   
+    height: 2.5rem;
+    border-radius: 4px;
+    background-color: rgb(115, 115, 115, 10%);
 }
+
 
 .register-btn {
     font-size: 16px;
-    background: #fff;
-    color: #181515;
+    background: #5F4A33;
+    color: #F3F0EC;
     padding: 5px 6px;
     border: none;
-    margin-top: 12px;
+    margin: 15px;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 15rem;
+}
+
+.register-btn-social {
+    font-size: 16px;
+    background-color: rgb(115, 115, 115, 10%);
+    color: #000000;
+    padding: 5px 6px;
+    border: none;
+    margin: 15px;
+    border-radius: 5px;
+    height: 3rem;
+    width: 20rem;
 }
 
 .register-btn:hover {
     cursor: pointer;
     transition: all 200ms;
-    background: #181515;
+    background: #352F29;
     color: #fff
+}
+
+
+
+
+
+
+
+/* Prueba */
+.button {
+	display: flex;
+	height: 2.5rem;
+	padding: 0;
+	background: rgb(115, 115, 115, 10%);
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+    margin-top: 1.5rem;
+    width: 25rem;
+}
+
+.button:hover {
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.button:active {
+	background: rgba(0, 0, 0, 0.08);
+}
+
+
+.button__text,
+.button__icon {
+	display: inline-flex;
+	align-items: center;
+	padding: 0 50px;
+	color: #5F4A33;
+	height: 100%;
+}
+
+.button__icon {
+	font-size: 1.5em;
+	background: rgba(0, 0, 0, 0.08);
+}
+
+
+.a-links{
+    color: #5F4A33;
+    border: none;
+    text-decoration: none;
+}
+
+.a-links:hover{
+    color: #352F29;
+    border: none;
+    text-decoration: none;
 }
