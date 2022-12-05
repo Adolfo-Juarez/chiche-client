@@ -30,7 +30,7 @@ function RegisterForm() {
 
   return (
     <form className="register-register" onSubmit={sendRegister}>
-      <h2 className="register-title">Se parte de nosotros</h2>
+      <h2 className="register-title">Crea tu cuenta</h2>
 
       <label className="labels-register" htmlFor="username">
         Nombre de Usuario
@@ -68,6 +68,23 @@ function RegisterForm() {
       />
 
       <input type="submit" className="register-btn" value="Registrarse" />
+
+            <button type="button" class="button">
+		<span class="button__text">Continuar con Google&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		<span class="button__icon">
+    <ion-icon name="logo-google"></ion-icon>
+		</span>
+	</button>
+
+            <button type="button" class="button">
+		<span class="button__text">Continuar con Facebook</span>
+		<span class="button__icon">
+    <ion-icon name="logo-facebook"></ion-icon>
+		</span>
+	</button>
+
+
+
     </form>
   );
 }

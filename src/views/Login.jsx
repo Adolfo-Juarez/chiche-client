@@ -1,14 +1,16 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LoginForm from "../components/LoginForm";
-import img from "../assets/img/img-3.jpeg";
+import RegisterForm from "../components/RegisterForm";
+
 
 function SignUp() {
   return (
     <>
       <Header />
-      <div class="content-login" style={{ backgroundImage: `url(${img})` }}>
+      <div className="display-flex-official" /* class="content-login" style={{ backgroundImage: `url(${img2})` }} */>
         <LoginForm />
+        <RegisterForm></RegisterForm>
       </div>
       <Footer />
     </>
