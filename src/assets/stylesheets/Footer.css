@@ -6,7 +6,7 @@ footer {
 }
 
 
-footer a {
+footer a{
     text-decoration: none;
 }
 
@@ -60,11 +60,12 @@ footer ul.more-links {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    padding: 0px 0px 0px 0px;
 }
 
 footer ul.more-links li {
     list-style: none;
-    padding: 0 20px;
+    padding: 0 20px;    
 }
 
 footer ul.more-links li a {
