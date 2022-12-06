@@ -1,14 +1,12 @@
 import logo from "../assets/icons/logo.svg";
 import logoChico from "../assets/icons/logo-chico.svg";
-import imgPedidos from "../assets/icons/archive.svg";
-import imgAyuda from "../assets/icons/question.svg";
 import ButtonsAccess from "./ButtonsAccess";
 import "../assets/stylesheets/Header.css";
 
 function Header() {
   function handleSubmit() {
     let toggle = document.querySelector(".btn-nav");
-    let links = document.querySelector(".links");
+    let links = document.querySelector(".mobile-menu");
 
     toggle.classList.toggle("rotate");
     links.classList.toggle("active");
@@ -54,29 +52,31 @@ function Header() {
           </a>
         </div>
         <a onClick={handleSubmit} className="btn-nav" href="#"></a>
-        <ul className="links">
-          <a href="/">
+        <ul className="mobile-menu">
+          <a className="logo" href="/">
             <img src={logoChico} alt="Logo nav" width="60px" />
           </a>
-          <li className="link">
-            <a href="/">Inicio</a>
-          </li>
-          <li className="link">
-            <a href="/choose">Menú</a>
-          </li>
-          <li className="link">
-            <a href="/contact">Contáctanos</a>
-          </li>
-          <p>
-            Se parte de nosotros para obtener los mejores productos y
-            descuentos.
-            <br></br>
-            <br></br>
-            <b>Más información...</b>
-          </p>
-          <div className="buttons">
-            <ButtonsAccess />
-          </div>
+          <ul className="nav">
+            <li className="link">
+              <a href="/">Inicio</a>
+            </li>
+            <li className="link">
+              <a href="/choose">Menú</a>
+            </li>
+            <li className="link">
+              <a href="/contact">Contáctanos</a>
+            </li>
+            <p className="description">
+              Se parte de nosotros para obtener los mejores productos y
+              descuentos.
+              <br></br>
+              <br></br>
+              <b>Más información...</b>
+            </p>
+            <div className="buttons">
+              <ButtonsAccess />
+            </div>
+          </ul>
           <ul className="more-links">
             <li>
               <a href="/order">
