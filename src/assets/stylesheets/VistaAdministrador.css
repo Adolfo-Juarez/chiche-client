@@ -1,0 +1,7 @@
+table{
+    text-align: center;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
