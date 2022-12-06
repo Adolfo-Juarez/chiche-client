@@ -4,6 +4,10 @@ import React, { Component, useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
+/* 1-ARREGLAR EL CSS DEL FOOTER Y LIMPIAR LOS COMNENTARIOS DEL HEADER 
+   2.-BORRAR EL COMPONENTE PROVIDER
+      DEL MAIN*/
+
 const url = "http://localhost:8080/";
 
 function VistaAdministrador() {
@@ -30,6 +34,8 @@ function VistaAdministrador() {
                 setpots(data);
               })
 }
+
+  /* TRATAR DE HACER RESPONSIVE EL CRUD */
 
 return (
   <>

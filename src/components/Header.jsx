@@ -1,3 +1,4 @@
+import { Link , NavLink} from 'react-router-dom'
 import logo from "../assets/icons/logo.svg";
 import logoChico from "../assets/icons/logo-chico.svg";
 import ButtonsAccess from "./ButtonsAccess";
@@ -12,59 +13,63 @@ function Header() {
     links.classList.toggle("active");
   }
 
+  /* 1.-CAMBIAR LAS ETIQUETAS A POR LINK Y NAV LINK
+     2.-CONTEXT A LOS INGREDIENTES 
+     COMO UN ARREGLO*/
+
   return (
     <>
       <header>
         <section className="flex-container">
           <div className="flex-logo">
-            <a href="/">
+            <Link to="/">
               <img className="logo" src={logo} alt="Logo header" />
-            </a>
+            </Link>
           </div>
           <div className="nav">
             <ul>
               <li>
-                <a href="/">Inicio</a>
+                <NavLink to="/">Inicio</NavLink>
               </li>
               <li>
-                <a href="/choose">Menú</a>
+                <NavLink to="/choose">Menú</NavLink>
               </li>
               <li>
-                <a href="/contact">Contáctanos</a>
+                <NavLink to="/contact">Contáctanos</NavLink>
               </li>
             </ul>
           </div>
           <div className="login">
-            <a className="btn" href="/login">
+            <Link className="btn" to="/login">
               Inicia Sesión
-            </a>
+            </Link>
           </div>
         </section>
       </header>
       <header className="mobile-header">
-        <a
+        <Link
           className="btn-modo-oscuro"
-          href="https://github.com/Adolfo-Juarez/chiche-client"
-        ></a>
+          to="https://github.com/Adolfo-Juarez/chiche-client"
+        ></Link>
         <div>
-          <a href="/">
+          <Link to="/">
             <img className="logo" src={logo} alt="Logo header" />
-          </a>
+          </Link>
         </div>
-        <a onClick={handleSubmit} className="btn-nav" href="#"></a>
+        <Link onClick={handleSubmit} className="btn-nav" to="#"></Link>
         <ul className="mobile-menu">
-          <a className="logo" href="/">
+          <Link className="logo" to="/">
             <img src={logoChico} alt="Logo nav" width="60px" />
-          </a>
+          </Link>
           <ul className="nav">
             <li className="link">
-              <a href="/">Inicio</a>
+              <NavLink to="/">Inicio</NavLink>
             </li>
             <li className="link">
-              <a href="/choose">Menú</a>
+              <NavLink to="/choose">Menú</NavLink>
             </li>
             <li className="link">
-              <a href="/contact">Contáctanos</a>
+              <NavLink to="/contact">Contáctanos</NavLink>
             </li>
             <p className="description">
               Se parte de nosotros para obtener los mejores productos y
@@ -79,16 +84,16 @@ function Header() {
           </ul>
           <ul className="more-links">
             <li>
-              <a href="/order">
+              <Link to="/order">
                 <span className="imgPedidos"></span>
                 <span>Pedidos</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/help">
+              <Link to="/help">
                 <span className="imgAyuda"></span>
                 <span>Ayuda</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </ul>
