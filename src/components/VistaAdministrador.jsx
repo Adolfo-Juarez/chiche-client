@@ -3,33 +3,15 @@ import axios from "axios";
 import React, { Component, useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Swal from 'sweetalert2';
 
 const url = "http://localhost:8080/";
 
 function VistaAdministrador() {
 
-  /*state={
-    data:[],
-  }
-
-  const data = useState([])
-
-
- peticionGet=()=>{
-    axios.get(`${url}cake`).then(response=>{
-      this.state.data.push(response.data)
-      console.log(this.state.data)
-    })
-  }
-
-  /*componentDidMount() {
-    this.peticionGet();
-  }*/
-
   const [posts, setpots] = useState([]);
-  /* const [] = useState([]) */
   const {id}=useParams();
+
+  //Metodo Mostrar -->
 
   useEffect(() => {
     axios.get(`${url}cake`)
@@ -39,14 +21,14 @@ function VistaAdministrador() {
       })
   })
 
+  //Metodo Borrar -->
+  
   const borrar = (id) => {
             axios.delete(`http://localhost:8080/cake/${id}`)
               .then(({ data }) => {
                 console.log(data);
                 setpots(data);
               })
-          
-         
 }
 
 return (
@@ -87,7 +69,6 @@ return (
                   </>
                 )
               })}
-
             </tbody>
           </table>
         </div>
