@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 .container p {
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
@@ -9,21 +9,21 @@
 }
 
 .container span {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .container a {
-	color: #333;
-	font-size: 14px;
+	color: #5F4A33;
+	font-size: 18px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
 .container button {
-	border-radius: 20px;
+	border-radius: 6px;
 	border: 1px solid #F2eee3;
-	background-color: #F2eee3;
-	color: black;
+	background-color: #5F4A33;
+	color: #F2eee3;
 	font-size: 12px;
 	font-weight: bold;
 	padding: 12px 45px;
@@ -42,7 +42,7 @@
 }
 
 .container button.ghost {
-	background-color: transparent;
+	background-color: #5F4A33;
 	border-color: #5F4A33;
 }
 
@@ -58,8 +58,9 @@
 }
 
 .container input {
-	background-color: #f2eee3;
+	background-color: rgb(115, 115, 115, 10%);
 	border: none;
+    outline: none;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
@@ -137,6 +138,8 @@
 
 .overlay {
 	background: #F3F0EC;
+/* 	background-image: url("../img/img-4.jpg");
+	background-size:cover; */
 	color: #5F4A33;
 	position: relative;
 	left: -100%;
