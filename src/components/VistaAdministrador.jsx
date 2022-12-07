@@ -52,7 +52,7 @@ return (
     <div className="container-admin">
       <div className="row">
         <div className="col">
-          <table className="table table-striped">
+          <table className="table table-hover">
             <thead>
               <tr>
                 <th>Orden</th>
