@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../assets/stylesheets/VistaAdministrador.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const url = "http://localhost:8080/";
@@ -48,6 +47,7 @@ return (
 
 
   <>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
 
     <div className="container-admin">
       <div className="row">
