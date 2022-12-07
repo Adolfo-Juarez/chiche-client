@@ -70,7 +70,7 @@ function SignUp() {
         <LoginForm />
         <RegisterForm></RegisterForm>
       </div> */}
-      <div className="container2" id="container">
+      <div className="container" id="container">
 
 
 

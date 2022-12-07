@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-.container2 p {
+.container p {
 	font-size: 20px;
 	font-weight: 100;
 	line-height: 20px;
@@ -8,18 +8,18 @@
 	margin: 20px 0 30px;
 }
 
-.container2 span {
+.container span {
 	font-size: 18px;
 }
 
-.container2 a {
+.container a {
 	color: #5F4A33;
 	font-size: 18px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
-.container2 button {
+.container button {
 	border-radius: 6px;
 	border: 1px solid #F2eee3;
 	background-color: #5F4A33;
@@ -33,15 +33,15 @@
 	border-color: #5F4A33;
 }
 
-.container2 button:active {
+.container button:active {
 	transform: scale(0.95);
 }
 
-.container2 button:focus {
+.container button:focus {
 	outline: none;
 }
 
-.container2 button.ghost {
+.container button.ghost {
 	background-color: #5F4A33;
 	border-color: #5F4A33;
 }
@@ -57,7 +57,7 @@
 	text-align: center;
 }
 
-.container2 input {
+.container input {
 	background-color: rgb(115, 115, 115, 10%);
 	border: none;
     outline: none;
@@ -66,7 +66,7 @@
 	width: 100%;
 }
 
-.container2 {
+.container {
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
