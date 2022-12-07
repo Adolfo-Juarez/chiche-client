@@ -1,31 +1,36 @@
-import source from './config.json'
-import axios from "axios";
+import conf from './config.json' assert {type: "json"};
+import axios from 'axios'
 
-export async function authenticate(username, password) {
-    let response = await axios.post(`${source.host}user/${username}`,{ password: password } )
+export async function login(email, password){
 
-    localStorage.setItem("user",JSON.stringify(response.data))
-    return response.data
-}
-
-export async function register(username, email, password) {
-    let response = await axios.post(`${source.host}user`, {
-        username: username,
-        email: email,
-        password: password
+    let response = axios.post(`${conf.host}user/login`,{
+        email:email,
+        password:password
     })
 
-    localStorage.setItem("user", JSON.stringify(response.data))
+    localStorage.setItem("token",JSON.stringify((await response).data));
 
-    return response.data
+    return (await response).data
 }
 
-export function isAuthenticated() {
-    let user = localStorage.getItem("user")
-    if (user == null) {
+export async function register(username, email, password){
+    let response = axios.post(`${conf.host}user`,{
+        username:username,
+        email:email,
+        password:password
+    })
+
+    localStorage.setItem("token",JSON.stringify((await response).data));
+
+    return (await response).data
+}
+
+function isAuthenticate(){
+    if(!localStorage.getItem("token")){
         return false
     }
 
-    return JSON.parse(user).logged
-
+    return JSON.parse(localStorage.getItem("token")).authorized
 }
+
+console.log(isAuthenticate())

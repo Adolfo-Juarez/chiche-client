@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { isAuthenticated } from "../resources/Auth";
 
 function ButtonsAccess() {
   const [logged, setLogged] = useState(false);
+
+
   useEffect(() => {
-    setLogged(isAuthenticated);
   }, []);
 
   if (logged) {
@@ -14,7 +14,6 @@ function ButtonsAccess() {
           href="/"
           className="btn"
           onClick={() => {
-            localStorage.clear();
           }}
         >
           Cerrar sesión

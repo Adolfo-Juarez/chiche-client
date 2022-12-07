@@ -1,6 +1,5 @@
 import "../assets/stylesheets/Forms.css";
 import { useEffect, useState } from "react";
-import { authenticate, isAuthenticated } from "../resources/Auth";
 import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
@@ -9,21 +8,10 @@ function LoginForm() {
   const [password, setPassword] = useState(null);
 
   function login(e) {
-    e.preventDefault();
-    authenticate(email, password).then((data) => {
-      if (!data.logged) {
-        alert("Verifique sus datos");
-      } else {
-        navigate("/");
-      }
-    });
   }
 
   useEffect(() => {
-    if (isAuthenticated()) {
-      alert("Ya tienes una sesión iniciada");
-      navigate("/");
-    }
+    
   }, []);
 
   return (

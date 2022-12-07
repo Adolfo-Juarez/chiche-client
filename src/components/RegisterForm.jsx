@@ -1,7 +1,6 @@
 import "../assets/stylesheets/Forms.css";
 import { useEffect, useState } from "react"; // Para manejar estados
 import { useNavigate } from "react-router-dom"; // Para redirigir la página
-import { isAuthenticated, register } from "../resources/Auth";
 
 function RegisterForm() {
   const navigate = useNavigate();
@@ -11,22 +10,11 @@ function RegisterForm() {
   const [password, setPassword] = useState("");
 
   function sendRegister(e) {
-    e.preventDefault()
-    register(username, email, password).then(
-      (data) => {
-        if (!data.logged) {
-          alert("Este nombre de usuario ya está en uso")
-        } else {
-          navigate("/")
-        }
-      }
-    )
   }
 
-  useEffect(() => { if(isAuthenticated()){
-    alert("Ya tienes una sesión iniciada")
-    navigate("/")
-  } }, [])
+  useEffect(() => { 
+    
+   }, [])
 
   return (
     <form className="register-register" onSubmit={sendRegister}>

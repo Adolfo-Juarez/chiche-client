@@ -4,7 +4,6 @@ import { getOrders, orderCake } from "../resources/Request";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import '../assets/stylesheets/Order.css'
-import { isAuthenticated } from "../resources/Auth";
 
 function Order() {
 
