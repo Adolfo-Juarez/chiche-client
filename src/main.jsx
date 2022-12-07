@@ -8,7 +8,6 @@ import ChooseDetails from "./views/OrderPastel3";
 import Login from "./views/Login";
 import Contactanos from "./views/Contactanos";
 import "./assets/stylesheets/index.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
