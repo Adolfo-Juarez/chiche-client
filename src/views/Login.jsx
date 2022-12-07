@@ -105,7 +105,7 @@ function SignUp() {
 
 
 
-        <div className="form-container sign-in-container">
+        <div className="form-left form-container sign-in-container">
 
 
           {/* FORMULARIO DEL INICIO DE SESIÓN */}
