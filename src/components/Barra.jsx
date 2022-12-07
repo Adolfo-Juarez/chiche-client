@@ -1,19 +1,20 @@
 import next from "../assets/icons/next.svg";
 import back from "../assets/icons/back.svg";
 import "../assets/stylesheets/Barra.css";
+import { Link } from "react-router-dom";
 
 function Barra({ nextpage, previouspage, title }) {
   return (
     <>
       <nav className="barra">
         <div className="contenedor">
-          <a href={previouspage}>
+          <Link to={previouspage}>
             <img src={back} />
-          </a>
+          </Link>
           <h1>{`${title}:`}</h1>
-          <a href={nextpage}>
+          <Link to={nextpage}>
             <img src={next} />
-          </a>
+          </Link>
         </div>
       </nav>
     </>
