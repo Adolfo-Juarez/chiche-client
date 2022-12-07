@@ -14,8 +14,11 @@ import gallery6 from "../assets/img/gallery6.png";
 import "../assets/stylesheets/VistaPrincipal.css";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/sea-green";
+import { Link } from "react-router-dom";
 
 function VistaPrincipal() {
+
+
   const options = {
     updateOnMove: true,
     type: "loop",
@@ -44,9 +47,9 @@ function VistaPrincipal() {
             </p>
             <div className="button-images">
               <img className="img1" src={header1} alt="Header 1" />
-              <a className="btn" href="/choose">
+              <Link className="btn" to="/choose">
                 Ordena aquí
-              </a>
+              </Link>
               <img src={header2} alt="Header 2" />
             </div>
           </div>

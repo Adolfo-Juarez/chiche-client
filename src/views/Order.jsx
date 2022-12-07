@@ -4,7 +4,7 @@ import { getOrders, orderCake } from "../resources/Request";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import '../assets/stylesheets/Order.css'
-import { isAuthenticated } from "../resources/Auth";
+import { isAuthenticate } from "../resources/Auth";
 
 function Order() {
 
@@ -14,7 +14,7 @@ function Order() {
     orderCake()
 
     useEffect(() => {
-        if (!isAuthenticated()) {
+        if (!isAuthenticate()) {
             alert("Debes iniciar sesion para ver tu pedido")
             navigate("/")
         }

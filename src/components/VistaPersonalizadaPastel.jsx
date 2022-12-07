@@ -3,8 +3,12 @@ import cookie from "../assets/icons/galletas.svg";
 import cake from "../assets/icons/cake.svg";
 import blondie from "../assets/icons/blondie.svg";
 import "../assets/stylesheets/VistaPersonalizadaPastel.css";
+import { useNavigate } from "react-router-dom";
 
 function VistaPersonalizadaPastel() {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="container-cards">
@@ -15,7 +19,7 @@ function VistaPersonalizadaPastel() {
           <div
             className="card"
             onClick={() => {
-              location.replace("/biscuit");
+              navigate("/biscuit");
             }}
           >
             <img src={cake} />
@@ -26,7 +30,7 @@ function VistaPersonalizadaPastel() {
           <div
             className="card"
             onClick={() => {
-              location.replace("/cupcake");
+              navigate("/cupcake");
             }}
           >
             <img src={panque} />
@@ -37,7 +41,7 @@ function VistaPersonalizadaPastel() {
           <div
             className="card"
             onClick={() => {
-              location.replace("/blondie");
+              navigate("/blondie");
             }}
           >
             <img src={blondie} />
@@ -48,7 +52,7 @@ function VistaPersonalizadaPastel() {
           <div
             className="card"
             onClick={() => {
-              location.replace("/cookie");
+              navigate("/cookie");
             }}
           >
             <img src={cookie} />
