@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../assets/stylesheets/VistaAdministrador.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const url = "http://localhost:8080/";
@@ -48,18 +49,18 @@ return (
 
   <>
 
-    <div className="container">
+    <div className="container-admin">
       <div className="row">
         <div className="col">
           <table className="table table-striped">
             <thead>
-              <tr className='orden'>
-                <th>#</th>
-                <th>Biscuit</th>
-                <th>Filling</th>
-                <th>Coverage</th>
-                <th>Design</th>
-                <th>Shape</th>
+              <tr>
+                <th>Orden</th>
+                <th>Bizcocho</th>
+                <th>Relleno</th>
+                <th>Cobertura</th>
+                <th>Diseño</th>
+                <th>Forma</th>
                 <th>Acciones</th>
               </tr>
             </thead>
