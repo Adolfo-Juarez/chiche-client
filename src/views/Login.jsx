@@ -4,10 +4,13 @@ import "../assets/stylesheets/form-dynamic.css"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login, register } from "../resources/Auth";
-
+import UserContext from "../context/UserContext";
+import { useContext } from "react";
 
 
 function SignUp() {
+
+  const { userContext, setUserContext } = useContext(UserContext)
 
   //Funciones handler para hacer la transición
   // De los paneles
@@ -24,11 +27,23 @@ function SignUp() {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
 
-  function loginHandler(e) {
+  async function loginHandler(e) {
     e.preventDefault()
-
-    login(email, password)
-
+    setUserContext(await login(email, password))
+    if (userContext.authorized) {
+      Swal.fire({
+        icon: 'sucess',
+        title: 'Sesión iniciada',
+        text: 'Se ha iniciado sesión correctamente'
+      })
+      navigate("/")
+      return
+    }
+    Swal.fire({
+      icon: 'error',
+      title: 'Error al iniciar sesión',
+      text: 'Verifque su usuario o contraseña'
+    })
   }
 
   useEffect(() => {
@@ -40,9 +55,10 @@ function SignUp() {
   const [emailRegister, setEmailRegister] = useState("");
   const [passwordRegister, setPasswordRegister] = useState("");
 
-  function sendRegister(e) {
+  async function sendRegister(e) {
     e.preventDefault();
-    register(usernameRegister, emailRegister, passwordRegister);
+    setUserContext(await register(usernameRegister, emailRegister, passwordRegister));
+    navigate("/")
   }
 
   useEffect(() => { }, [])

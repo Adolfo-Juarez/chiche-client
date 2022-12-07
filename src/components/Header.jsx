@@ -1,10 +1,18 @@
-import { Link , NavLink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from "../assets/icons/logo.svg";
 import logoChico from "../assets/icons/logo-chico.svg";
 import ButtonsAccess from "./ButtonsAccess";
 import "../assets/stylesheets/Header.css";
+import UserContext from '../context/UserContext';
+import { useContext } from 'react';
+import Swal from 'sweetalert2';
 
 function Header() {
+
+  const { userContext, setUserContext } = useContext(UserContext)
+
+  console.log(userContext.authorized)
+
   function handleSubmit() {
     let toggle = document.querySelector(".btn-nav");
     let links = document.querySelector(".mobile-menu");
@@ -14,8 +22,33 @@ function Header() {
   }
 
 
+  function buttonSelective(isLogged) {
+    if (!isLogged) {
+      return (<>
+        <div className="login">
+          <Link className="btn" to="/login">
+            Inicia Sesión
+          </Link>
+        </div>
+      </>)
+    }
 
-  
+    return (<>
+      <div className="login">
+        <Link className="btn" to="#" onClick={()=>{
+          setUserContext({token:"null",authorized:false})
+          Swal.fire({
+            icon: 'sucess',
+            title: 'Sesión finalizada',
+            text: 'Se ha cerrado sesión correctamente'
+          })
+        }}>
+          Cerrar Sesión
+        </Link>
+      </div>
+    </>)
+  }
+
   return (
     <>
       <header>
@@ -38,11 +71,7 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div className="login">
-            <Link className="btn" to="/login">
-              Inicia Sesión
-            </Link>
-          </div>
+          {buttonSelective(userContext.authorized)}
         </section>
       </header>
       <header className="mobile-header">

@@ -25,7 +25,7 @@ export async function register(username, email, password){
     return (await response).data
 }
 
-function isAuthenticate(){
+export function isAuthenticate(){
     if(!localStorage.getItem("token")){
         return false
     }
