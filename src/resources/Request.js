@@ -44,18 +44,13 @@ export async function orderCake(token) {
         size: "grande"
     }, config)
 
-    axios.post(`${source.host}cake/order`, {
-        idCake: response.data.id,
-        idUser: JSON.parse(localStorage.getItem("user")).id
-    })
-
     localStorage.removeItem("biscuit")
     localStorage.removeItem("coverage")
     localStorage.removeItem("filling")
     localStorage.removeItem("design")
     localStorage.removeItem("shape")
 
-    localStorage.setItem("lastOrdered",JSON.stringify(response.data))
+    localStorage.setItem("lastOrdered",JSON.stringify(await response.data))
 
     return await response.data
 
