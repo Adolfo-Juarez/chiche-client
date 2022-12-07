@@ -17,13 +17,14 @@ import Help from "./views/Ayuda";
 import Order from "./views/Order";
 
 import Admin from "./views/Administrador"
-/* import IngredientsProvider from "./resources/IngredientsProvider"; */
+
+
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <IngredientsProvider> */}
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/choose" element={<Choose />} />
@@ -38,7 +39,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/*" element={<E404 />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
-      {/* </IngredientsProvider> */}
+      
     </BrowserRouter>
   </React.StrictMode>
 );

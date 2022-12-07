@@ -1,43 +1,47 @@
+import { Link } from "react-router-dom";
 import imgFacebook from "../assets/icons/facebook.svg";
 import imgTwitter from "../assets/icons/twitter.svg";
 import imgInstagram from "../assets/icons/instagram.svg";
 import imgGitHub from "../assets/icons/github.svg";
 import "../assets/stylesheets/Footer.css";
 
+
+
+
 function Footer() {
   return (
     <>
       <footer>
-        <a href="/contact">
+        <Link to="/contact">
           <h1>Envíanos tus comentarios</h1>
-        </a>
+        </Link>
         <ul className="more-links">
           <li>
-            <a href="/order">
+            <Link to="/order">
               <span className="imgPedidos"></span>
               <span>Pedidos</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/help">
+            <Link to="/help">
               <span className="imgAyuda"></span>
               <span>Ayuda</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="social">
-          <a href="https://github.com/Adolfo-Juarez/chiche-client">
+          <Link href="https://github.com/Adolfo-Juarez/chiche-client">
             <img src={imgGitHub} alt="GitHub" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <img src={imgFacebook} alt="Facebook" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <img src={imgTwitter} alt="Twitter" />
-          </a>
-          <a href="#">
+          </Link>
+          <Link href="#">
             <img src={imgInstagram} alt="Instagram" />
-          </a>
+          </Link>
         </div>
         <span>
           © 2022 Chiché.
