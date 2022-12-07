@@ -3,6 +3,7 @@ import axios from "axios";
 import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import '../assets/stylesheets/VistaAdministrador.css'
 
 
 const url = "http://localhost:8080/";
@@ -52,7 +53,7 @@ return (
         <div className="col">
           <table className="table table-striped">
             <thead>
-              <tr>
+              <tr className='orden'>
                 <th>#</th>
                 <th>Biscuit</th>
                 <th>Filling</th>
@@ -78,7 +79,8 @@ return (
                       <td>{cakes.design}</td>
                       <td>{cakes.shape}</td>
                       <td className='botones'>
-                        <button type="button" className="btn btn-danger" onClick={()=>borrar(cakes.id)}>Finalizar</button>
+                        <button type="button" className="btn btn-outline-danger" 
+                        onClick={()=>borrar(cakes.id)}>Finalizar</button>
                       </td>
                     </tr>
 

@@ -13,10 +13,9 @@ function Header() {
     links.classList.toggle("active");
   }
 
-  /* 1.-CAMBIAR LAS ETIQUETAS A POR LINK Y NAV LINK
-     2.-CONTEXT A LOS INGREDIENTES 
-     COMO UN ARREGLO*/
 
+
+  
   return (
     <>
       <header>

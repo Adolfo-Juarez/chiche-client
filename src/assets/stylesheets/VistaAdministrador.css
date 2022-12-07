@@ -1,7 +1,73 @@
-table{
+table {
     text-align: center;
 }
-.botones{
+
+/* .botones {
     display: flex;
     justify-content: center;
 }
+
+
+table th {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+table td {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+.container .btn {
+    text-align: center;
+    font-size: 18px;
+}
+
+.container .btn {
+    color: white;
+}
+
+.container .btn {
+    background: rgb(232, 24, 24);
+    color: white;
+    border: 2px solid rgb(232, 24, 24);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.container .btn:hover {
+    color: black;
+}
+
+.container .btn::after {
+    background: red;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.container .btn:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.row {
+    width: 100%;
+    height: 20%;
+} */
