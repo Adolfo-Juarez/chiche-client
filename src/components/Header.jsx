@@ -25,6 +25,7 @@ function Header() {
   function buttonSelective(isLogged) {
     if (!isLogged) {
       return (<>
+   
         <div className="login">
           <Link className="btn" to="/login">
             Inicia Sesión
@@ -34,6 +35,10 @@ function Header() {
     }
 
     return (<>
+    <div className="login">
+    <Link className='btn' to="/admin">Dashboard</Link>
+    </div>
+       
       <div className="login">
         <Link className="btn" to="#" onClick={()=>{
           setUserContext({token:"null",authorized:false})
