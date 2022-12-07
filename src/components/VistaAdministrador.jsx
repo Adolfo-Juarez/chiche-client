@@ -4,41 +4,49 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-/* 1-ARREGLAR EL CSS DEL FOOTER Y LIMPIAR LOS COMENTARIOS DEL HEADER 
-   2.-BORRAR EL COMPONENTE PROVIDER
-      DEL MAIN*/
 
 const url = "http://localhost:8080/";
 
 function VistaAdministrador() {
 
+
   const [posts, setpots] = useState([]);
   const {id}=useParams();
 
+
   //Metodo Mostrar -->
 
+
   useEffect(() => {
+    
     axios.get(`${url}cake`)
       .then(({ data }) => {
       
         setpots(data);
+
       })
   })
 
   //Metodo Borrar -->
   
   const borrar = (id) => {
-            axios.delete(`http://localhost:8080/cake/${id}`)
+            
+    axios.delete(`http://localhost:8080/cake/${id}`)
               .then(({ data }) => {
+                
                 console.log(data);
                 setpots(data);
+
               })
 }
 
-  /* TRATAR DE HACER RESPONSIVE EL CRUD */
+
 
 return (
+
+
   <>
+
     <div className="container">
       <div className="row">
         <div className="col">
@@ -61,6 +69,7 @@ return (
                 return (
 
                   <>
+
                     <tr>
                       <td>{cakes.id}</td>
                       <td>{cakes.biscuit}</td>
@@ -72,6 +81,7 @@ return (
                         <button type="button" className="btn btn-danger" onClick={()=>borrar(cakes.id)}>Finalizar</button>
                       </td>
                     </tr>
+
                   </>
                 )
               })}
@@ -80,9 +90,11 @@ return (
         </div>
       </div>
     </div>
+
   </>
 )
 
 }
+
 
 export default VistaAdministrador
