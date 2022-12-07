@@ -1,11 +1,12 @@
-import { Link,NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import imgFacebook from "../assets/icons/facebook.svg";
 import imgTwitter from "../assets/icons/twitter.svg";
 import imgInstagram from "../assets/icons/instagram.svg";
 import imgGitHub from "../assets/icons/github.svg";
 import "../assets/stylesheets/Footer.css";
 
-/* 1.-CAMBIAR LAS ETIQUETAS A POR LINK Y NAV LINK */
+
+
 
 function Footer() {
   return (
