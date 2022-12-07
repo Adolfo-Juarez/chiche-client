@@ -30,9 +30,10 @@ function SignUp() {
   async function loginHandler(e) {
     e.preventDefault()
     setUserContext(await login(email, password))
+    console.log(userContext)
     if (userContext.authorized) {
       Swal.fire({
-        icon: 'sucess',
+        icon: 'success',
         title: 'Sesión iniciada',
         text: 'Se ha iniciado sesión correctamente'
       })
