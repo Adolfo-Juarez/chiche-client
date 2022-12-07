@@ -48,12 +48,12 @@ return (
 
   <>
 
-    <div className="container">
+    <div className="container-admin">
       <div className="row">
         <div className="col">
           <table className="table table-striped">
             <thead>
-              <tr className='orden'>
+              <tr>
                 <th>#</th>
                 <th>Biscuit</th>
                 <th>Filling</th>
