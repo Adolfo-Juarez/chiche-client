@@ -1,13 +1,17 @@
 import source from './config.json'
 import axios from 'axios'
 
-export async function orderCake() {
+export async function orderCake(token) {
 
     let biscuit = localStorage.getItem("biscuit")
     let coverage = localStorage.getItem("coverage")
     let filling = localStorage.getItem("filling")
     let design = localStorage.getItem("design")
     let shape = localStorage.getItem("shape")
+
+    const config = {
+        headers:{Authorization:`Bearer ${token}` }
+    }
     
     if (biscuit == null
         && coverage == null
@@ -22,7 +26,11 @@ export async function orderCake() {
         || filling == null
         || design == null
         || shape == null) {
-        alert("Ha olvidado un ingrediente, inténtelo de nuevo")
+            Swal.fire({
+                icon: 'error',
+                title: 'Has olvidado un ingrediente',
+                text: 'Verifique su pedido e intentelo de nuevo'
+              })
         navigate("/biscuit")
     }
 
@@ -34,9 +42,9 @@ export async function orderCake() {
         design: design,
         shape: shape,
         size: "grande"
-    })
+    }, config)
 
-    axios.post(`${source.host}order`, {
+    axios.post(`${source.host}cake/order`, {
         idCake: response.data.id,
         idUser: JSON.parse(localStorage.getItem("user")).id
     })

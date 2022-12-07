@@ -38,7 +38,7 @@ function Header() {
         <Link className="btn" to="#" onClick={()=>{
           setUserContext({token:"null",authorized:false})
           Swal.fire({
-            icon: 'sucess',
+            icon: 'success',
             title: 'Sesión finalizada',
             text: 'Se ha cerrado sesión correctamente'
           })
